@@ -33,50 +33,6 @@ POST /sjj-resume-test-1/_search
                 //       }
                 //     }
                 //   },
-            ],
-            "should": [
-                // {
-                //     "bool": {
-                //         "must": [
-                //             {
-                //                 // 原型需求5/6 level2（高优先级）：求职者期望顶薪 ≤ 当前职位顶薪
-                //                 "range": {
-                //                     "desiredPositions.salary.max": {
-                //                         "lte": 10000, // 此处应该是当前职位的顶薪
-                //                         "boost": 60
-                //                     }
-                //                 }
-                //             },
-                //             {
-                //                 // 原型需求5/6 level2（高优先级）：求职者期望底薪 ≥ 当前职位底薪
-                //                 "range": {
-                //                     "desiredPositions.salary.min": {
-                //                         "gte": 6000, //此处应该是当前职位的底薪
-                //                         "boost": 60
-                //                     }
-                //                 }
-                //             }
-                //         ]
-                //     }
-                // },
-                // {
-                //     // 原型需求5/6 level2（低优先级）：求职者期望顶薪 > 当前职位顶薪
-                //     "range": {
-                //         "desiredPositions.salary.max": {
-                //             "gt": 10000, // 此处应该是当前职位的顶薪
-                //             "boost": 3
-                //         }
-                //     }
-                // },
-                // {
-                //     // 原型需求5/6 level2（低优先级）：求职者期望底薪 < 当前职位底薪
-                //     "range": {
-                //         "desiredPositions.salary.min": {
-                //             "lt": 6000, // 此处应该是当前职位的底薪
-                //             "boost": 3
-                //         }
-                //     }
-                // },
                 {
                     "match":{
                         // match 是全文检索，以下字符串将经过默认 analyzer 划分为若干 token，可以匹配多个字段，只要有一个字段匹配即可
@@ -85,8 +41,52 @@ POST /sjj-resume-test-1/_search
                             "educationBackground09dc4d43e0005 educationBackground09dc4d43e0006 educationBackground09dc4d43e0008"
                         
                     }
-                }
-                //,
+                }                
+            ],
+            "should": [
+                {
+                    "bool": {
+                        "must": [
+                            {
+                                // 原型需求5/6 level2（高优先级）：求职者期望顶薪 ≤ 当前职位顶薪
+                                "range": {
+                                    "desiredPositions.salary.max": {
+                                        "lte": 10000, // 此处应该是当前职位的顶薪
+                                        "boost": 60
+                                    }
+                                }
+                            },
+                            {
+                                // 原型需求5/6 level2（高优先级）：求职者期望底薪 ≥ 当前职位底薪
+                                "range": {
+                                    "desiredPositions.salary.min": {
+                                        "gte": 6000, //此处应该是当前职位的底薪
+                                        "boost": 60
+                                    }
+                                }
+                            }
+                        ]
+                    }
+                },
+                {
+                    // 原型需求5/6 level2（低优先级）：求职者期望顶薪 > 当前职位顶薪
+                    "range": {
+                        "desiredPositions.salary.max": {
+                            "gt": 10000, // 此处应该是当前职位的顶薪
+                            "boost": 3
+                        }
+                    }
+                },
+                {
+                    // 原型需求5/6 level2（低优先级）：求职者期望底薪 < 当前职位底薪
+                    "range": {
+                        "desiredPositions.salary.min": {
+                            "lt": 6000, // 此处应该是当前职位的底薪
+                            "boost": 3
+                        }
+                    }
+                },
+
                 //   {
                 //     "match":{
                 //       "desiredPositions.desiredPositionId":{
@@ -112,7 +112,7 @@ POST /sjj-resume-test-1/_search
                 //       }
                 //     }
                 //   },
-                  ,{
+                  {
                     // 原型需求6/6：求职者 期望行业 与当前职位对应公司的行业相符
                     "match" :{
                       "desiredPositions.companyIndustry.industry": {
