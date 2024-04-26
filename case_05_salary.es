@@ -2,9 +2,8 @@
  * 说明：在 case_4 基础上，添加需求
  *「求职者的期望薪资范围优先匹配落在当前职位薪资范围内，
  *  再推荐期望最低信息有在职位薪资范围内」
- * 注意要配合 exist 来使用，确保求职者的期望薪资信息完整
  *
- *
+ * 对应字段 desiredPositions.salary.min
  *
  * 作者：sjj
  */
@@ -43,7 +42,7 @@ POST /sjj-resume-test-1/_search
                 // 原型需求5/6 level2（高优先级）：求职者期望顶薪 ≤ 当前职位顶薪
                 "range": {
                   "desiredPositions.salary.max": {
-                    "lte": 10000,
+                    "lte": 10000, // 此处应该是当前职位的顶薪
                     "boost": 60
                   }
                 }
@@ -52,7 +51,7 @@ POST /sjj-resume-test-1/_search
                 // 原型需求5/6 level2（高优先级）：求职者期望底薪 ≥ 当前职位底薪
                 "range": {
                   "desiredPositions.salary.min": {
-                    "gte": 6000,
+                    "gte": 6000,  //此处应该是当前职位的底薪
                     "boost": 60
                   }
                 }
@@ -64,7 +63,7 @@ POST /sjj-resume-test-1/_search
           // 原型需求5/6 level2（低优先级）：求职者期望顶薪 > 当前职位顶薪
 					"range": {
 						"desiredPositions.salary.max": {
-							"gt": 10000,
+							"gt": 10000,  // 此处应该是当前职位的顶薪
 							"boost": 3
 						}
 					}
@@ -73,7 +72,7 @@ POST /sjj-resume-test-1/_search
           // 原型需求5/6 level2（低优先级）：求职者期望底薪 < 当前职位底薪
 					"range": {
 						"desiredPositions.salary.min": {
-							"lt": 6000,
+							"lt": 6000, // 此处应该是当前职位的底薪
 							"boost": 3
 						}
 					}
