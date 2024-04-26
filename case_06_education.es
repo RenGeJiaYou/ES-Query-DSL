@@ -12,27 +12,27 @@ POST /sjj-resume-test-1/_search
     "query": {
         "bool": {
             "must": [
-                // {
-                // // 原型需求5/6：level 1：筛选出填写了薪资信息的简历（去除将返回缺失该信息的所有简历）
-                // 	"exists": {
-                // 		"field": "desiredPositions.salary.min"
-                // 	}
-                // },
-                // {
-                // // 原型需求5/6：level 1：筛选出填写了薪资信息的简历（去除将返回缺失该信息的所有简历）
-                // 	"exists": {
-                // 		"field": "desiredPositions.salary.max"
-                // 	}
-                // },
-                //   {
-                //     // 原型需求1/6:求职者填写意向职位与当前职位（类型）的一级类型相符；
-                //     "match" :{
-                //       "desiredPositions.desiredPositionType.firstLevel": {
-                //         "query":"jobtype5bc468fe501809dc4d1000000",
-                //         "boost":20
-                //       }
-                //     }
-                //   },
+                {
+                // 原型需求5/6：level 1：筛选出填写了薪资信息的简历（去除将返回缺失该信息的所有简历）
+                	"exists": {
+                		"field": "desiredPositions.salary.min"
+                	}
+                },
+                {
+                // 原型需求5/6：level 1：筛选出填写了薪资信息的简历（去除将返回缺失该信息的所有简历）
+                	"exists": {
+                		"field": "desiredPositions.salary.max"
+                	}
+                },
+                  {
+                    // 原型需求1/6:求职者填写意向职位与当前职位（类型）的一级类型相符；
+                    "match" :{
+                      "desiredPositions.desiredPositionType.firstLevel": {
+                        "query":"jobtype5bc468fe501809dc4d1000000",
+                        "boost":20
+                      }
+                    }
+                  },
                 {
                     "match":{
                         // match 是全文检索，以下字符串将经过默认 analyzer 划分为若干 token，可以匹配多个字段，只要有一个字段匹配即可
@@ -95,15 +95,15 @@ POST /sjj-resume-test-1/_search
                 //       }
                 //     }
                 //   },
-                // {
-                //     // 原型需求2/6: 求职者期望工作的城市与当前职位相符；
-                //     "match" :{
-                //       "desiredPositions.jobCity.city": {
-                //         "query":"350100",
-                //         "boost":8
-                //       }
-                //     }
-                //   },
+                {
+                    // 原型需求2/6: 求职者期望工作的城市与当前职位相符；
+                    "match" :{
+                      "desiredPositions.jobCity.city": {
+                        "query":"350100",
+                        "boost":8
+                      }
+                    }
+                  },
                 //   {
                 //     "match" :{
                 //       "highestEducationHistory.profession": {
