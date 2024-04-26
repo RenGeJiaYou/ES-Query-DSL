@@ -36,27 +36,27 @@ POST /sjj-resume-test-1/_search
               },*/
 			],
 			"should": [
-				{
+        {
           "bool": {
-            "must":[
+            "must": [
               {
-          // 原型需求5/6 level2（高优先级）：求职者期望顶薪 ≤ 当前职位顶薪
-					"range": {
-						"desiredPositions.salary.max": {
-							"lte": 10000,
-							"boost": 60
-						}
-					}
-				},
-				{
-          // 原型需求5/6 level2（高优先级）：求职者期望底薪 ≥ 当前职位底薪
-					"range": {
-						"desiredPositions.salary.min": {
-							"gte": 6000,
-							"boost": 60
-						}
-					}
-				}
+                // 原型需求5/6 level2（高优先级）：求职者期望顶薪 ≤ 当前职位顶薪
+                "range": {
+                  "desiredPositions.salary.max": {
+                    "lte": 10000,
+                    "boost": 60
+                  }
+                }
+              },
+              {
+                // 原型需求5/6 level2（高优先级）：求职者期望底薪 ≥ 当前职位底薪
+                "range": {
+                  "desiredPositions.salary.min": {
+                    "gte": 6000,
+                    "boost": 60
+                  }
+                }
+              }
             ]
           }
         },
