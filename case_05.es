@@ -37,6 +37,9 @@ POST /sjj-resume-test-1/_search
 			],
 			"should": [
 				{
+          "bool": {
+            "must":[
+              {
           // 原型需求5/6 level2（高优先级）：求职者期望顶薪 ≤ 当前职位顶薪
 					"range": {
 						"desiredPositions.salary.max": {
@@ -53,7 +56,10 @@ POST /sjj-resume-test-1/_search
 							"boost": 60
 						}
 					}
-				},
+				}
+            ]
+          }
+        },
 				{
           // 原型需求5/6 level2（低优先级）：求职者期望顶薪 > 当前职位顶薪
 					"range": {
