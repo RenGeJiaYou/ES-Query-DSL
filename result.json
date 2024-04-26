@@ -1,0 +1,2403 @@
+{
+    "took": 2,
+    "timed_out": false,
+    "_shards": {
+        "total": 5,
+        "successful": 5,
+        "skipped": 0,
+        "failed": 0
+    },
+    "hits": {
+        "total": {
+            "value": 17,
+            "relation": "eq"
+        },
+        "max_score": 128,
+        "hits": [
+            {
+                "_index": "sjj-resume-test-1",
+                "_type": "_doc",
+                "_id": "Hk25Do8BT1vxFVcbFPL5",
+                "_score": 128,
+                "_source": {
+                    "recordCreatedTime": "2023-08-01T01:17:47.588+0000",
+                    "recordUpdatedTime": "2023-09-06T10:02:55.972+0000",
+                    "ownerInfo": {
+                        "platformId": "zhjypte51bc611eeac39801844e39900",
+                        "platformVersionId": "zhjypte51bc611eeac39801844e39911",
+                        "projectId": "zhjypte51bc611eeac3980184Project",
+                        "subProjectId": "zhjypte51bc611eeac3980SubProject",
+                        "unitId": "-1",
+                        "servicerId": "-1"
+                    },
+                    "seekerUserInfo": {
+                        "seekerUserId": "2ca4cd3089aa6b8c0189aa8ac840000f",
+                        "personId": "2ca4cd3089aa6b8c0189aa8ac8440010",
+                        "idCardType": 1,
+                        "idCard": "440982199709082530",
+                        "workplaceRole": 2,
+                        "graduatedSchool": "福州大学",
+                        "graduatedDate": "2022-05-31T16:00:00.000+0000",
+                        "jobStatus": "jobseekingstatus570edf504ef69101",
+                        "jobStartDate": "jobentrytimecpdd0edf5041wef69103",
+                        "address": {
+                            "regionId": "350102",
+                            "country": "CHN",
+                            "regionPath": "/350000/350100/350102",
+                            "province": "350000",
+                            "city": "350100",
+                            "county": "350102"
+                        },
+                        "householdLocation": {
+                            "regionId": "440982",
+                            "country": "CHN",
+                            "regionPath": "/440000/440900/440982",
+                            "province": "440000",
+                            "city": "440900",
+                            "county": "440982"
+                        },
+                        "seekerUserBirthday": "1997-09-07T16:00:00.000+0000",
+                        "seekerUserGender": 1
+                    },
+                    "isOpened": true,
+                    "isPerfect": true,
+                    "createdUserId": "2ca4cd3089aa6b8c0189aa8ac840000f",
+                    "createdTime": "2023-08-29T09:02:30.299+0000",
+                    "updatedTime": "2023-08-29T01:06:28.449+0000",
+                    "recordIsDeleted": false,
+                    "educationHistories": [
+                        {
+                            "educationHistoryId": "2ca4cd1889abe1ba0189aeacf72f0022",
+                            "schoolName": "福州大学",
+                            "education": "educationBackground09dc4d43e0005",
+                            "profession": "通信工程",
+                            "startDate": "2022-05-31T16:00:00.000+0000",
+                            "endDate": "2022-05-31T16:00:00.000+0000",
+                            "isUnifiedRecruitment": true,
+                            "isOverseaEducation": false
+                        },
+                        {
+                            "educationHistoryId": "4028987a89b3a9af0189b3a9afc70000",
+                            "schoolName": "福州大学",
+                            "education": "educationBackground09dc4d43e0005",
+                            "profession": "通信工程",
+                            "startDate": "2018-08-31T16:00:00.000+0000",
+                            "endDate": "2022-05-31T16:00:00.000+0000",
+                            "isUnifiedRecruitment": false,
+                            "isOverseaEducation": false
+                        }
+                    ],
+                    "highestEducationHistory": {
+                        "educationHistoryId": "2ca4cd1889abe1ba0189aeacf72f0022",
+                        "schoolName": "福州大学",
+                        "education": "educationBackground09dc4d43e0005",
+                        "profession": "通信工程",
+                        "startDate": "2022-05-31T16:00:00.000+0000",
+                        "endDate": "2022-05-31T16:00:00.000+0000",
+                        "isUnifiedRecruitment": true,
+                        "isOverseaEducation": false
+                    },
+                    "resumeRedundancy": {
+                        "queryRedundancyInfo": {
+                            "viewedMeRecruiterUserIdList": [
+                                "2ca4ed2889b3ccd10189b3e269a40012",
+                                "2ca4cd3089aa6b8c0189aa6b8fea000b",
+                                "2ca4ed2489a9ca510189aa0993490148",
+                                "2ca48c3c89be77580189be77582f0000",
+                                "2ca4ef7f89be99220189be99270d000b",
+                                "2ca4ed0489ce1bd30189ce1efd400014",
+                                "2ca4817b89cfbd870189cfbd8be4000b"
+                            ],
+                            "communicatedRecruiterUserIdList": [
+                                "2ca4cd3089aa6b8c0189aa6b8fea000b"
+                            ]
+                        },
+                        "employingInPlatformUnit": 1,
+                        "everEmployInPlatformUnit": 1,
+                        "lastSocialSecurityPaymentInfo": {
+                            "paymentStatus": 0
+                        }
+                    },
+                    "desiredPositions": [
+                        {
+                            "desiredPositionId": "4028997389ba3dd00189bb2b89890029",
+                            "desiredPositionType": {
+                                "firstLevel": "jobtype5bc468fe501809dc4d1000000",
+                                "secondLevel": "jobtype5bc468fe501809dc4d1000010",
+                                "thirdLevel": "jobtype5bc468fe501809dc4d4110150",
+                                "path": "/jobtype5bc468fe501809dc4d1000000/jobtype5bc468fe501809dc4d1000010/jobtype5bc468fe501809dc4d4110150"
+                            },
+                            "jobCity": {
+                                "regionId": "350102",
+                                "country": "CHN",
+                                "regionPath": "/350000/350100/350102",
+                                "province": "350000",
+                                "city": "350100",
+                                "county": "350102"
+                            },
+                            "salary": {
+                                "min": 8000,
+                                "max": 12000
+                            },
+                            "companySize": "enterprisesize03570edf504ef69102",
+                            "companyIndustry": {
+                                "industry": "industrytype5bc46fe09dc4d4100000",
+                                "industryIdPath": "/industrytype5bc46fe09dc4d4100000",
+                                "firstLevelIndustryId": "industrytype5bc46fe09dc4d4100000",
+                                "secondLevelIndustryId": "",
+                                "thirdLevelIndustryId": "",
+                                "fourthLevelIndustryId": ""
+                            }
+                        },
+                        {
+                            "desiredPositionId": "2ca4e70689fd828c018a00fd3eff0004",
+                            "desiredPositionType": {
+                                "firstLevel": "jobtype5bc468fe501809dc4d1010000",
+                                "secondLevel": "jobtype5bc468fe501809dc4d1000030",
+                                "thirdLevel": "jobtype5bc468fe501809dc4d4100140",
+                                "path": "/jobtype5bc468fe501809dc4d1010000/jobtype5bc468fe501809dc4d1000030/jobtype5bc468fe501809dc4d4100140"
+                            },
+                            "desiredJobNature": "",
+                            "jobCity": {
+                                "regionId": "350102",
+                                "country": "CHN",
+                                "regionPath": "/350000/350100/350102",
+                                "province": "350000",
+                                "city": "350100",
+                                "county": "350102"
+                            },
+                            "salary": {
+                                "min": 1000,
+                                "max": 8000
+                            },
+                            "companySize": "",
+                            "companyIndustry": {}
+                        }
+                    ],
+                    "jobHistories": [
+                        {
+                            "jobHistoryId": "2ca4b87489bb2cd50189bb2cd5bb0000",
+                            "companyName": "福建众智汇云有限公司",
+                            "departmentName": "大前端",
+                            "positionHeld": "前端开发程序员",
+                            "positionType": {
+                                "firstLevel": "/jobtype5bc468fe501809dc4d1010000/jobtype5bc468fe501809dc4d1000030/jobtype5bc468fe501809dc4d4100140",
+                                "secondLevel": "",
+                                "thirdLevel": "",
+                                "path": "//jobtype5bc468fe501809dc4d1010000/jobtype5bc468fe501809dc4d1000030/jobtype5bc468fe501809dc4d4100140",
+                                "positionType": "/jobtype5bc468fe501809dc4d1010000/jobtype5bc468fe501809dc4d1000030/jobtype5bc468fe501809dc4d4100140"
+                            },
+                            "startDate": "2022-05-31T16:00:00.000+0000",
+                            "endDate": "2023-06-30T16:00:00.000+0000",
+                            "jobContent": "阿飞哥人法网"
+                        }
+                    ],
+                    "openedStatusTimeChange": {
+                        "true": "2023-08-03T11:39:38.179+0000"
+                    },
+                    "fileResumes": [
+                        {
+                            "fileResumeId": "2ca4cd168a406eb4018a40870a860001",
+                            "name": "2c9080287ddc522e017f439d554e026a (5.doc",
+                            "path": "/ms-obsfile/protected/hwobs/zhjypte51bc611eeac39801844e39911/zhjypte51bc611eeac3980SubProject/2023/08/29/2ca4ed0789e28761018a40870880026f.doc",
+                            "createdUserId": "2ca4cd3089aa6b8c0189aa8ac840000f",
+                            "createdTime": "2023-08-29T09:01:46.502+0000",
+                            "updatedTime": "2023-08-29T09:01:46.502+0000"
+                        },
+                        {
+                            "fileResumeId": "2ca4cd168a406eb4018a4087b59b0002",
+                            "name": "测试.docx",
+                            "path": "/ms-obsfile/protected/hwobs/zhjypte51bc611eeac39801844e39911/zhjypte51bc611eeac3980SubProject/2023/08/29/2ca4ed0789e28761018a4087b4b10271.docx",
+                            "createdUserId": "2ca4cd3089aa6b8c0189aa8ac840000f",
+                            "createdTime": "2023-08-29T09:02:30.299+0000",
+                            "updatedTime": "2023-08-29T09:02:30.299+0000"
+                        },
+                        {
+                            "fileResumeId": "2ca4ef7a8a403fc7018a403fc70d0000",
+                            "name": "2c9080287ddc522e017f439d554e026a (2.doc",
+                            "path": "/ms-obsfile/protected/hwobs/zhjypte51bc611eeac39801844e39911/zhjypte51bc611eeac3980SubProject/2023/08/29/2ca4ed0789e28761018a403fc3d90268.doc",
+                            "createdUserId": "2ca4cd3089aa6b8c0189aa8ac840000f",
+                            "createdTime": "2023-08-29T07:43:56.173+0000",
+                            "updatedTime": "2023-08-29T07:43:56.173+0000"
+                        }
+                    ],
+                    "lastGraduatedEducationHistory": {
+                        "educationHistoryId": "2ca4cd1889abe1ba0189aeacf72f0022",
+                        "schoolName": "福州大学",
+                        "education": "educationBackground09dc4d43e0005",
+                        "profession": "通信工程",
+                        "startDate": "2022-05-31T16:00:00.000+0000",
+                        "endDate": "2022-05-31T16:00:00.000+0000",
+                        "isUnifiedRecruitment": true,
+                        "isOverseaEducation": false
+                    }
+                }
+            },
+            {
+                "_index": "sjj-resume-test-1",
+                "_type": "_doc",
+                "_id": "-DurDo8BT1vxFVcb4f1p",
+                "_score": 125,
+                "_source": {
+                    "recordCreatedTime": "2023-07-31T12:03:12.209+0000",
+                    "recordUpdatedTime": "2023-09-06T10:02:59.321+0000",
+                    "ownerInfo": {
+                        "platformId": "zhjypte51bc611eeac39801844e39900",
+                        "platformVersionId": "zhjypte51bc611eeac39801844e39911",
+                        "projectId": "zhjypte51bc611eeac3980184Project",
+                        "subProjectId": "zhjypte51bc611eeac3980SubProject",
+                        "unitId": "-1",
+                        "servicerId": "-1"
+                    },
+                    "seekerUserInfo": {
+                        "seekerUserId": "2ca4cd3089aa6b8c0189aa9df1bc0017",
+                        "personId": "2ca4cd3089aa6b8c0189aa9df1bf0018",
+                        "idCardType": 1,
+                        "idCard": "350622199912183033",
+                        "workplaceRole": 2,
+                        "graduatedSchool": "福州大学",
+                        "graduatedDate": "2023-07-05T16:00:00.000+0000",
+                        "jobStatus": "jobseekingstatus570edf504ef69101",
+                        "jobStartDate": "jobentrytimecpdd0edf5041wef69100",
+                        "address": {
+                            "regionId": "350622",
+                            "country": "CHN",
+                            "regionPath": "/350000/350600/350622",
+                            "province": "350000",
+                            "city": "350600",
+                            "county": "350622"
+                        },
+                        "householdLocation": {
+                            "regionId": "350622",
+                            "country": "CHN",
+                            "regionPath": "/350000/350600/350622",
+                            "province": "350000",
+                            "city": "350600",
+                            "county": "350622"
+                        },
+                        "initialJobDate": "2023-08-09T16:00:00.000+0000",
+                        "advantage": "自我评价自我评价自我评价"
+                    },
+                    "isOpened": false,
+                    "isPerfect": true,
+                    "createdUserId": "2ca4cd3089aa6b8c0189aa9df1bc0017",
+                    "createdTime": "2023-07-31T06:33:44.678+0000",
+                    "updatedTime": "2023-08-29T02:58:27.681+0000",
+                    "educationHistories": [
+                        {
+                            "educationHistoryId": "40289a7a8a3f3204018a3f3a02170001",
+                            "schoolName": "福建师范大学",
+                            "uniformSocialCreditCode": "12350000488001209F",
+                            "education": "educationBackground09dc4d43e0008",
+                            "profession": "软件工程",
+                            "startDate": "2023-08-08T16:00:00.000+0000",
+                            "endDate": "2023-08-11T16:00:00.000+0000",
+                            "isUnifiedRecruitment": false,
+                            "isOverseaEducation": false
+                        }
+                    ],
+                    "highestEducationHistory": {
+                        "educationHistoryId": "40289a7a8a3f3204018a3f3a02170001",
+                        "schoolName": "福建师范大学",
+                        "uniformSocialCreditCode": "12350000488001209F",
+                        "education": "educationBackground09dc4d43e0008",
+                        "profession": "软件工程",
+                        "startDate": "2023-08-08T16:00:00.000+0000",
+                        "endDate": "2023-08-11T16:00:00.000+0000",
+                        "isUnifiedRecruitment": false,
+                        "isOverseaEducation": false
+                    },
+                    "desiredPositions": [
+                        {
+                            "desiredPositionId": "40288c7589aaa1810189aaa181c30000",
+                            "desiredPositionType": {
+                                "firstLevel": "jobtype5bc468fe501809dc4d1010000",
+                                "secondLevel": "jobtype5bc468fe501809dc4d1000030",
+                                "thirdLevel": "jobtype5bc468fe501809dc4d4100150",
+                                "path": "/jobtype5bc468fe501809dc4d1010000/jobtype5bc468fe501809dc4d1000030/jobtype5bc468fe501809dc4d4100150"
+                            },
+                            "jobCity": {
+                                "regionId": "350102",
+                                "country": "CHN",
+                                "regionPath": "/350000/350100/350102",
+                                "province": "350000",
+                                "city": "350100",
+                                "county": "350102"
+                            },
+                            "salary": {
+                                "min": 10000,
+                                "max": 12000
+                            },
+                            "companySize": "enterprisesize03570edf504ef69102",
+                            "companyIndustry": {
+                                "industry": "industrytype5bc46fe09dc4d4100004",
+                                "industryIdPath": "/industrytype5bc46fe09dc4d4100000/industrytype5bc46fe09dc4d4100004",
+                                "firstLevelIndustryId": "industrytype5bc46fe09dc4d4100000",
+                                "secondLevelIndustryId": "industrytype5bc46fe09dc4d4100004",
+                                "thirdLevelIndustryId": "",
+                                "fourthLevelIndustryId": ""
+                            }
+                        },
+                        {
+                            "desiredPositionId": "40288c7589b9980a0189b9980aef0000",
+                            "desiredPositionType": {
+                                "firstLevel": "jobtype5bc468fe501809dc4d1010000",
+                                "secondLevel": "jobtype5bc468fe501809dc4d1000030",
+                                "thirdLevel": "jobtype5bc468fe501809dc4d4100140",
+                                "path": "/jobtype5bc468fe501809dc4d1010000/jobtype5bc468fe501809dc4d1000030/jobtype5bc468fe501809dc4d4100140"
+                            },
+                            "desiredJobNature": "recruitment0eb3dcbcf5041wef69101",
+                            "jobCity": {
+                                "regionId": "350102",
+                                "country": "CHN",
+                                "regionPath": "/350000/350100/350102",
+                                "province": "350000",
+                                "city": "350100",
+                                "county": "350102"
+                            },
+                            "salary": {
+                                "min": 6000,
+                                "max": 8000
+                            },
+                            "companySize": "enterprisesize03570edf504ef69101",
+                            "companyIndustry": {
+                                "industry": "industrytype5bc46fe09dc4d4100005",
+                                "industryIdPath": "/industrytype5bc46fe09dc4d4100000/industrytype5bc46fe09dc4d4100005",
+                                "firstLevelIndustryId": "industrytype5bc46fe09dc4d4100000",
+                                "secondLevelIndustryId": "industrytype5bc46fe09dc4d4100005",
+                                "thirdLevelIndustryId": "",
+                                "fourthLevelIndustryId": ""
+                            }
+                        }
+                    ],
+                    "projectHistories": [
+                        {
+                            "projectHistoryId": "2ca4cd3089aa6b8c0189aaa348fd0020",
+                            "projectName": "智慧就业",
+                            "projectRole": "开发者",
+                            "startDate": "2023-06-30T16:00:00.000+0000",
+                            "endDate": "2023-07-30T16:00:00.000+0000",
+                            "jobContent": "经历描述经历描述经历描述"
+                        }
+                    ],
+                    "certificates": [
+                        {
+                            "certificateId": "2ca4cd3089aa6b8c0189aaa4ac3c0021",
+                            "certificateName": "证书1",
+                            "givenDate": "2023-07-24T16:00:00.000+0000"
+                        }
+                    ],
+                    "skillTags": [
+                        {
+                            "skillTagId": "40288c7589aaa1810189aaa4dfce0003",
+                            "skillTagName": "技能标签",
+                            "usageTime": 12,
+                            "masteryLevel": 3
+                        }
+                    ],
+                    "languages": [
+                        {
+                            "languageAbilityId": "40288c7589aaa1810189aaa511400004",
+                            "languageType": "language0c37cb3fee3cdafd43efe003",
+                            "listeningAndSpeakingAbility": 3,
+                            "readingAndWritingAbility": 3
+                        }
+                    ],
+                    "recordIsDeleted": false,
+                    "fileResumes": [
+                        {
+                            "fileResumeId": "2ca4cd3089aa6b8c0189aaa6b3dd0023",
+                            "name": "测试1.pdf",
+                            "path": "/ms-obsfile/protected/hwobs/zhjypte51bc611eeac39801844e39911/zhjypte51bc611eeac3980SubProject/2023/07/31/2ca4ed2589aa021b0189aaa6b24f0007.pdf",
+                            "createdUserId": "2ca4cd3089aa6b8c0189aa9df1bc0017",
+                            "createdTime": "2023-07-31T06:33:19.069+0000",
+                            "updatedTime": "2023-07-31T06:33:19.069+0000"
+                        },
+                        {
+                            "fileResumeId": "2ca4cd3089aa6b8c0189aaa717e60028",
+                            "name": "测试2.pdf",
+                            "path": "/ms-obsfile/protected/hwobs/zhjypte51bc611eeac39801844e39911/zhjypte51bc611eeac3980SubProject/2023/07/31/2ca4ed2589aa021b0189aaa7153b0008.pdf",
+                            "createdUserId": "2ca4cd3089aa6b8c0189aa9df1bc0017",
+                            "createdTime": "2023-07-31T06:33:44.678+0000",
+                            "updatedTime": "2023-07-31T06:33:44.678+0000"
+                        }
+                    ],
+                    "trainingHistories": [
+                        {
+                            "trainingHistoryId": "2ca4aab289b91fc10189b938ba940011",
+                            "trainingName": "培训名称",
+                            "startDate": "2023-08-16T16:00:00.000+0000",
+                            "endDate": "2023-08-24T16:00:00.000+0000",
+                            "trainingContent": "经历描述经历描述经历描述"
+                        }
+                    ],
+                    "openedStatusTimeChange": {
+                        "true": "2023-08-03T02:28:07.462+0000",
+                        "false": "2023-08-03T02:28:08.380+0000"
+                    },
+                    "resumeRedundancy": {
+                        "queryRedundancyInfo": {
+                            "communicatedRecruiterUserIdList": [
+                                "2ca4ed2489a9ca510189aa0993490148"
+                            ],
+                            "viewedMeRecruiterUserIdList": [
+                                "2ca4ed2889b3ccd10189b3e269a40012",
+                                "2ca4ed2489a9ca510189aa0993490148",
+                                "2ca4cd3089aa6b8c0189aa6b8fea000b",
+                                "2ca48c3c89be77580189be77582f0000",
+                                "2ca4ef7f89be99220189be99270d000b",
+                                "2ca4ed0489ce1bd30189ce1efd400014",
+                                "2ca4817b89cfbd870189cfbd8be4000b"
+                            ],
+                            "notIntentionPositionTalentList": [
+                                {
+                                    "positionTalentId": "ae0bcbaf747359e3caf7001fadffdc7c",
+                                    "recruiterUserId": "2ca4ed2489a9ca510189aa0993490148",
+                                    "seekerUserId": "2ca4cd3089aa6b8c0189aa9df1bc0017",
+                                    "positionId": "2ca4aab289b91fc10189b9283fc40009"
+                                }
+                            ]
+                        },
+                        "employingInPlatformUnit": 0,
+                        "everEmployInPlatformUnit": 0,
+                        "lastSocialSecurityPaymentInfo": {
+                            "paymentStatus": 0
+                        }
+                    },
+                    "jobHistories": [
+                        {
+                            "jobHistoryId": "2ca4644f89b957260189b95726b30000",
+                            "companyName": "华博",
+                            "departmentName": "大前端",
+                            "positionHeld": "开发",
+                            "positionType": {
+                                "firstLevel": "jobtype5bc468fe501809dc4d1000000",
+                                "secondLevel": "jobtype5bc468fe501809dc4d1000010",
+                                "thirdLevel": "jobtype5bc468fe501809dc4d4110150",
+                                "path": "/jobtype5bc468fe501809dc4d1000000/jobtype5bc468fe501809dc4d1000010/jobtype5bc468fe501809dc4d4110150"
+                            },
+                            "startDate": "2023-08-01T16:00:00.000+0000",
+                            "endDate": "2023-08-16T16:00:00.000+0000",
+                            "jobContent": "我曾在一家创新型互联网企业担任前端开发工程师一职，负责设计、开发和维护多个响应式网页应用程序。在这个职位上，我致力于提升用户体验和界面设计，通过前沿的前端技术实现了高效、动态和用户友好的网页界面。"
+                        },
+                        {
+                            "jobHistoryId": "2ca4aab289b91fc10189b93618f10010",
+                            "companyName": "福州华博",
+                            "departmentName": "大前端",
+                            "positionHeld": "开发",
+                            "positionType": {
+                                "firstLevel": "jobtype5bc468fe501809dc4d1010000",
+                                "secondLevel": "jobtype5bc468fe501809dc4d1000030",
+                                "thirdLevel": "jobtype5bc468fe501809dc4d4100140",
+                                "path": "/jobtype5bc468fe501809dc4d1010000/jobtype5bc468fe501809dc4d1000030/jobtype5bc468fe501809dc4d4100140"
+                            },
+                            "startDate": "2023-08-02T16:00:00.000+0000",
+                            "endDate": "2023-08-29T16:00:00.000+0000",
+                            "jobContent": "我曾在一家创新型互联网企业担任前端开发工程师一职，负责设计、开发和维护多个响应式网页应用程序。在这个职位上，我致力于提升用户体验和界面设计，通过前沿的前端技术实现了高效、动态和用户友好的网页界面。"
+                        }
+                    ],
+                    "lastGraduatedEducationHistory": {
+                        "educationHistoryId": "40289a7a8a3f3204018a3f3a02170001",
+                        "schoolName": "福建师范大学",
+                        "uniformSocialCreditCode": "12350000488001209F",
+                        "education": "educationBackground09dc4d43e0008",
+                        "profession": "软件工程",
+                        "startDate": "2023-08-08T16:00:00.000+0000",
+                        "endDate": "2023-08-11T16:00:00.000+0000",
+                        "isUnifiedRecruitment": false,
+                        "isOverseaEducation": false
+                    }
+                }
+            },
+            {
+                "_index": "sjj-resume-test-1",
+                "_type": "_doc",
+                "_id": "_SyfDo8BT1vxFVcbAwmM",
+                "_score": 125,
+                "_source": {
+                    "recordCreatedTime": "2023-07-31T12:03:12.209+0000",
+                    "recordUpdatedTime": "2023-09-06T10:02:59.321+0000",
+                    "ownerInfo": {
+                        "platformId": "zhjypte51bc611eeac39801844e39900",
+                        "platformVersionId": "zhjypte51bc611eeac39801844e39911",
+                        "projectId": "zhjypte51bc611eeac3980184Project",
+                        "subProjectId": "zhjypte51bc611eeac3980SubProject",
+                        "unitId": "-1",
+                        "servicerId": "-1"
+                    },
+                    "seekerUserInfo": {
+                        "seekerUserId": "2ca4cd3089aa6b8c0189aa9df1bc0017",
+                        "personId": "2ca4cd3089aa6b8c0189aa9df1bf0018",
+                        "idCardType": 1,
+                        "idCard": "350622199912183033",
+                        "workplaceRole": 2,
+                        "graduatedSchool": "福州大学",
+                        "graduatedDate": "2023-07-05T16:00:00.000+0000",
+                        "jobStatus": "jobseekingstatus570edf504ef69101",
+                        "jobStartDate": "jobentrytimecpdd0edf5041wef69100",
+                        "address": {
+                            "regionId": "350622",
+                            "country": "CHN",
+                            "regionPath": "/350000/350600/350622",
+                            "province": "350000",
+                            "city": "350600",
+                            "county": "350622"
+                        },
+                        "householdLocation": {
+                            "regionId": "350622",
+                            "country": "CHN",
+                            "regionPath": "/350000/350600/350622",
+                            "province": "350000",
+                            "city": "350600",
+                            "county": "350622"
+                        },
+                        "initialJobDate": "2023-08-09T16:00:00.000+0000",
+                        "advantage": "自我评价自我评价自我评价"
+                    },
+                    "isOpened": false,
+                    "isPerfect": true,
+                    "createdUserId": "2ca4cd3089aa6b8c0189aa9df1bc0017",
+                    "createdTime": "2023-07-31T06:33:44.678+0000",
+                    "updatedTime": "2023-08-29T02:58:27.681+0000",
+                    "educationHistories": [
+                        {
+                            "educationHistoryId": "40289a7a8a3f3204018a3f3a02170001",
+                            "schoolName": "福建师范大学",
+                            "uniformSocialCreditCode": "12350000488001209F",
+                            "education": "educationBackground09dc4d43e0008",
+                            "profession": "软件工程",
+                            "startDate": "2023-08-08T16:00:00.000+0000",
+                            "endDate": "2023-08-11T16:00:00.000+0000",
+                            "isUnifiedRecruitment": false,
+                            "isOverseaEducation": false
+                        }
+                    ],
+                    "highestEducationHistory": {
+                        "educationHistoryId": "40289a7a8a3f3204018a3f3a02170001",
+                        "schoolName": "福建师范大学",
+                        "uniformSocialCreditCode": "12350000488001209F",
+                        "education": "educationBackground09dc4d43e0008",
+                        "profession": "软件工程",
+                        "startDate": "2023-08-08T16:00:00.000+0000",
+                        "endDate": "2023-08-11T16:00:00.000+0000",
+                        "isUnifiedRecruitment": false,
+                        "isOverseaEducation": false
+                    },
+                    "desiredPositions": [
+                        {
+                            "desiredPositionId": "40288c7589aaa1810189aaa181c30000",
+                            "desiredPositionType": {
+                                "firstLevel": "jobtype5bc468fe501809dc4d1010000",
+                                "secondLevel": "jobtype5bc468fe501809dc4d1000030",
+                                "thirdLevel": "jobtype5bc468fe501809dc4d4100150",
+                                "path": "/jobtype5bc468fe501809dc4d1010000/jobtype5bc468fe501809dc4d1000030/jobtype5bc468fe501809dc4d4100150"
+                            },
+                            "jobCity": {
+                                "regionId": "350102",
+                                "country": "CHN",
+                                "regionPath": "/350000/350100/350102",
+                                "province": "350000",
+                                "city": "350100",
+                                "county": "350102"
+                            },
+                            "salary": {
+                                "min": 10000,
+                                "max": 12000
+                            },
+                            "companySize": "enterprisesize03570edf504ef69102",
+                            "companyIndustry": {
+                                "industry": "industrytype5bc46fe09dc4d4100004",
+                                "industryIdPath": "/industrytype5bc46fe09dc4d4100000/industrytype5bc46fe09dc4d4100004",
+                                "firstLevelIndustryId": "industrytype5bc46fe09dc4d4100000",
+                                "secondLevelIndustryId": "industrytype5bc46fe09dc4d4100004",
+                                "thirdLevelIndustryId": "",
+                                "fourthLevelIndustryId": ""
+                            }
+                        },
+                        {
+                            "desiredPositionId": "40288c7589b9980a0189b9980aef0000",
+                            "desiredPositionType": {
+                                "firstLevel": "jobtype5bc468fe501809dc4d1010000",
+                                "secondLevel": "jobtype5bc468fe501809dc4d1000030",
+                                "thirdLevel": "jobtype5bc468fe501809dc4d4100140",
+                                "path": "/jobtype5bc468fe501809dc4d1010000/jobtype5bc468fe501809dc4d1000030/jobtype5bc468fe501809dc4d4100140"
+                            },
+                            "desiredJobNature": "recruitment0eb3dcbcf5041wef69101",
+                            "jobCity": {
+                                "regionId": "350102",
+                                "country": "CHN",
+                                "regionPath": "/350000/350100/350102",
+                                "province": "350000",
+                                "city": "350100",
+                                "county": "350102"
+                            },
+                            "salary": {
+                                "min": 6000,
+                                "max": 8000
+                            },
+                            "companySize": "enterprisesize03570edf504ef69101",
+                            "companyIndustry": {
+                                "industry": "industrytype5bc46fe09dc4d4100005",
+                                "industryIdPath": "/industrytype5bc46fe09dc4d4100000/industrytype5bc46fe09dc4d4100005",
+                                "firstLevelIndustryId": "industrytype5bc46fe09dc4d4100000",
+                                "secondLevelIndustryId": "industrytype5bc46fe09dc4d4100005",
+                                "thirdLevelIndustryId": "",
+                                "fourthLevelIndustryId": ""
+                            }
+                        }
+                    ],
+                    "projectHistories": [
+                        {
+                            "projectHistoryId": "2ca4cd3089aa6b8c0189aaa348fd0020",
+                            "projectName": "智慧就业",
+                            "projectRole": "开发者",
+                            "startDate": "2023-06-30T16:00:00.000+0000",
+                            "endDate": "2023-07-30T16:00:00.000+0000",
+                            "jobContent": "经历描述经历描述经历描述"
+                        }
+                    ],
+                    "certificates": [
+                        {
+                            "certificateId": "2ca4cd3089aa6b8c0189aaa4ac3c0021",
+                            "certificateName": "证书1",
+                            "givenDate": "2023-07-24T16:00:00.000+0000"
+                        }
+                    ],
+                    "skillTags": [
+                        {
+                            "skillTagId": "40288c7589aaa1810189aaa4dfce0003",
+                            "skillTagName": "技能标签",
+                            "usageTime": 12,
+                            "masteryLevel": 3
+                        }
+                    ],
+                    "languages": [
+                        {
+                            "languageAbilityId": "40288c7589aaa1810189aaa511400004",
+                            "languageType": "language0c37cb3fee3cdafd43efe003",
+                            "listeningAndSpeakingAbility": 3,
+                            "readingAndWritingAbility": 3
+                        }
+                    ],
+                    "recordIsDeleted": false,
+                    "fileResumes": [
+                        {
+                            "fileResumeId": "2ca4cd3089aa6b8c0189aaa6b3dd0023",
+                            "name": "测试1.pdf",
+                            "path": "/ms-obsfile/protected/hwobs/zhjypte51bc611eeac39801844e39911/zhjypte51bc611eeac3980SubProject/2023/07/31/2ca4ed2589aa021b0189aaa6b24f0007.pdf",
+                            "createdUserId": "2ca4cd3089aa6b8c0189aa9df1bc0017",
+                            "createdTime": "2023-07-31T06:33:19.069+0000",
+                            "updatedTime": "2023-07-31T06:33:19.069+0000"
+                        },
+                        {
+                            "fileResumeId": "2ca4cd3089aa6b8c0189aaa717e60028",
+                            "name": "测试2.pdf",
+                            "path": "/ms-obsfile/protected/hwobs/zhjypte51bc611eeac39801844e39911/zhjypte51bc611eeac3980SubProject/2023/07/31/2ca4ed2589aa021b0189aaa7153b0008.pdf",
+                            "createdUserId": "2ca4cd3089aa6b8c0189aa9df1bc0017",
+                            "createdTime": "2023-07-31T06:33:44.678+0000",
+                            "updatedTime": "2023-07-31T06:33:44.678+0000"
+                        }
+                    ],
+                    "trainingHistories": [
+                        {
+                            "trainingHistoryId": "2ca4aab289b91fc10189b938ba940011",
+                            "trainingName": "培训名称",
+                            "startDate": "2023-08-16T16:00:00.000+0000",
+                            "endDate": "2023-08-24T16:00:00.000+0000",
+                            "trainingContent": "经历描述经历描述经历描述"
+                        }
+                    ],
+                    "openedStatusTimeChange": {
+                        "true": "2023-08-03T02:28:07.462+0000",
+                        "false": "2023-08-03T02:28:08.380+0000"
+                    },
+                    "resumeRedundancy": {
+                        "queryRedundancyInfo": {
+                            "communicatedRecruiterUserIdList": [
+                                "2ca4ed2489a9ca510189aa0993490148"
+                            ],
+                            "viewedMeRecruiterUserIdList": [
+                                "2ca4ed2889b3ccd10189b3e269a40012",
+                                "2ca4ed2489a9ca510189aa0993490148",
+                                "2ca4cd3089aa6b8c0189aa6b8fea000b",
+                                "2ca48c3c89be77580189be77582f0000",
+                                "2ca4ef7f89be99220189be99270d000b",
+                                "2ca4ed0489ce1bd30189ce1efd400014",
+                                "2ca4817b89cfbd870189cfbd8be4000b"
+                            ],
+                            "notIntentionPositionTalentList": [
+                                {
+                                    "positionTalentId": "ae0bcbaf747359e3caf7001fadffdc7c",
+                                    "recruiterUserId": "2ca4ed2489a9ca510189aa0993490148",
+                                    "seekerUserId": "2ca4cd3089aa6b8c0189aa9df1bc0017",
+                                    "positionId": "2ca4aab289b91fc10189b9283fc40009"
+                                }
+                            ]
+                        },
+                        "employingInPlatformUnit": 0,
+                        "everEmployInPlatformUnit": 0,
+                        "lastSocialSecurityPaymentInfo": {
+                            "paymentStatus": 0
+                        }
+                    },
+                    "jobHistories": [
+                        {
+                            "jobHistoryId": "2ca4644f89b957260189b95726b30000",
+                            "companyName": "华博",
+                            "departmentName": "大前端",
+                            "positionHeld": "开发",
+                            "positionType": {
+                                "firstLevel": "jobtype5bc468fe501809dc4d1000000",
+                                "secondLevel": "jobtype5bc468fe501809dc4d1000010",
+                                "thirdLevel": "jobtype5bc468fe501809dc4d4110150",
+                                "path": "/jobtype5bc468fe501809dc4d1000000/jobtype5bc468fe501809dc4d1000010/jobtype5bc468fe501809dc4d4110150"
+                            },
+                            "startDate": "2023-08-01T16:00:00.000+0000",
+                            "endDate": "2023-08-16T16:00:00.000+0000",
+                            "jobContent": "我曾在一家创新型互联网企业担任前端开发工程师一职，负责设计、开发和维护多个响应式网页应用程序。在这个职位上，我致力于提升用户体验和界面设计，通过前沿的前端技术实现了高效、动态和用户友好的网页界面。"
+                        },
+                        {
+                            "jobHistoryId": "2ca4aab289b91fc10189b93618f10010",
+                            "companyName": "福州华博",
+                            "departmentName": "大前端",
+                            "positionHeld": "开发",
+                            "positionType": {
+                                "firstLevel": "jobtype5bc468fe501809dc4d1010000",
+                                "secondLevel": "jobtype5bc468fe501809dc4d1000030",
+                                "thirdLevel": "jobtype5bc468fe501809dc4d4100140",
+                                "path": "/jobtype5bc468fe501809dc4d1010000/jobtype5bc468fe501809dc4d1000030/jobtype5bc468fe501809dc4d4100140"
+                            },
+                            "startDate": "2023-08-02T16:00:00.000+0000",
+                            "endDate": "2023-08-29T16:00:00.000+0000",
+                            "jobContent": "我曾在一家创新型互联网企业担任前端开发工程师一职，负责设计、开发和维护多个响应式网页应用程序。在这个职位上，我致力于提升用户体验和界面设计，通过前沿的前端技术实现了高效、动态和用户友好的网页界面。"
+                        }
+                    ],
+                    "lastGraduatedEducationHistory": {
+                        "educationHistoryId": "40289a7a8a3f3204018a3f3a02170001",
+                        "schoolName": "福建师范大学",
+                        "uniformSocialCreditCode": "12350000488001209F",
+                        "education": "educationBackground09dc4d43e0008",
+                        "profession": "软件工程",
+                        "startDate": "2023-08-08T16:00:00.000+0000",
+                        "endDate": "2023-08-11T16:00:00.000+0000",
+                        "isUnifiedRecruitment": false,
+                        "isOverseaEducation": false
+                    }
+                }
+            },
+            {
+                "_index": "sjj-resume-test-1",
+                "_type": "_doc",
+                "_id": "-iueDo8BT1vxFVcbXCTa",
+                "_score": 68,
+                "_source": {
+                    "recordCreatedTime": "2023-07-31T12:03:12.209+0000",
+                    "recordUpdatedTime": "2024-04-02T14:08:46.922+0000",
+                    "ownerInfo": {
+                        "platformId": "zhjypte51bc611eeac39801844e39900",
+                        "platformVersionId": "zhjypte51bc611eeac39801844e39911",
+                        "projectId": "zhjypte51bc611eeac3980184Project",
+                        "subProjectId": "zhjypte51bc611eeac3980SubProject",
+                        "unitId": "-1",
+                        "servicerId": "-1"
+                    },
+                    "seekerUserInfo": {
+                        "seekerUserId": "2ca4cd3089aa6b8c0189aa8d63d70012",
+                        "personId": "2ca4cd3089aa6b8c0189aa8d63d90013",
+                        "idCardType": 1,
+                        "idCard": "350322199709171698",
+                        "graduatedSchool": "福州大学",
+                        "graduatedDate": "2023-06-30T16:00:00.000+0000",
+                        "jobStatus": "jobseekingstatus570edf504ef69101",
+                        "jobStartDate": "jobentrytimecpdd0edf5041wef69100",
+                        "address": {
+                            "regionId": "350103",
+                            "country": "CHN",
+                            "regionPath": "/350000/350100/350103",
+                            "province": "350000",
+                            "city": "350100",
+                            "county": "350103"
+                        },
+                        "householdLocation": {
+                            "regionId": "350102",
+                            "country": "CHN",
+                            "regionPath": "/350000/350100/350102",
+                            "province": "350000",
+                            "city": "350100",
+                            "county": "350102"
+                        },
+                        "initialJobDate": "2023-06-30T16:00:00.000+0000",
+                        "seekerUserGender": 1,
+                        "workplaceRole": 2,
+                        "seekerUserBirthday": "1997-09-16T16:00:00.000+0000",
+                        "advantage": "工作勤恳"
+                    },
+                    "isOpened": true,
+                    "isPerfect": true,
+                    "createdUserId": "2ca4cd3089aa6b8c0189aa8d63d70012",
+                    "createdTime": "2023-07-31T06:06:32.163+0000",
+                    "updatedTime": "2024-03-25T01:31:12.857+0000",
+                    "resumeRedundancy": {
+                        "queryRedundancyInfo": {
+                            "communicatedRecruiterUserIdList": [
+                                "2ca4ed2489a9ca510189aa0993490148"
+                            ],
+                            "viewedMeRecruiterUserIdList": [
+                                "2ca4ed2489a9ca510189aa0993490148",
+                                "2ca4ed2889b3ccd10189b3e269a40012",
+                                "2ca4cd3089aa6b8c0189aa6b8fea000b",
+                                "2ca48c3c89be77580189be77582f0000",
+                                "2ca4ef7f89be99220189be99270d000b",
+                                "2ca4ed0489ce1bd30189ce1efd400014",
+                                "2ca4817b89cfbd870189cfbd8be4000b"
+                            ]
+                        },
+                        "employingInPlatformUnit": 0,
+                        "everEmployInPlatformUnit": 1,
+                        "lastSocialSecurityPaymentInfo": {
+                            "paymentStatus": 0
+                        }
+                    },
+                    "recordIsDeleted": false,
+                    "openedStatusTimeChange": {
+                        "true": "2024-03-06T05:42:37.765+0000",
+                        "false": "2023-08-23T07:52:03.531+0000"
+                    },
+                    "jobHistories": [
+                        {
+                            "jobHistoryId": "2ca48a3e8a1c9718018a21585aba003e",
+                            "companyName": "华博",
+                            "departmentName": "大前端",
+                            "positionHeld": "前端程序员",
+                            "positionType": {
+                                "firstLevel": "jobtype5bc468fe501809dc4d1010000",
+                                "secondLevel": "jobtype5bc468fe501809dc4d1000030",
+                                "thirdLevel": "jobtype5bc468fe501809dc4d4100140",
+                                "path": "/jobtype5bc468fe501809dc4d1010000/jobtype5bc468fe501809dc4d1000030/jobtype5bc468fe501809dc4d4100140",
+                                "positionType": "jobtype5bc468fe501809dc4d4100140"
+                            },
+                            "startDate": "2023-08-22T16:00:00.000+0000",
+                            "endDate": "2998-12-31T16:00:00.000+0000",
+                            "jobContent": "担任前端开发工程师，负责前端代码的维护与优化，显著提升项目稳定性和用户体验。专注于提高页面加载速度和响应效率，确保跨浏览器兼容性，参与开发响应式网页，提升前端性能，实现流畅的用户交互。参与排查并解决线上问题，保障产品服务质量。\n"
+                        },
+                        {
+                            "jobHistoryId": "2ca4cd278e1ce538018e1d44c30c0039",
+                            "companyName": "xxx公司",
+                            "departmentName": "",
+                            "positionHeld": "测试职位",
+                            "positionType": {
+                                "firstLevel": "jobtype5bc468fe501809dc4d1010000",
+                                "secondLevel": "jobtype5bc468fe501809dc4d1000030",
+                                "thirdLevel": "jobtype5bc468fe501809dc4d4100140",
+                                "path": "/jobtype5bc468fe501809dc4d1010000/jobtype5bc468fe501809dc4d1000030/jobtype5bc468fe501809dc4d4100140",
+                                "positionType": "jobtype5bc468fe501809dc4d4100140"
+                            },
+                            "startDate": "2024-01-07T16:00:00.000+0000",
+                            "endDate": "2024-02-07T16:00:00.000+0000",
+                            "jobContent": "在xxx公司担任前端开发工程师"
+                        }
+                    ],
+                    "educationHistories": [
+                        {
+                            "educationHistoryId": "2ca48a3e8a1c9718018a2159176f003f",
+                            "schoolName": "福州大学",
+                            "uniformSocialCreditCode": "12350000488002092Y",
+                            "education": "educationBackground09dc4d43e0005",
+                            "profession": "计算机科学技术",
+                            "startDate": "2023-08-22T16:00:00.000+0000",
+                            "endDate": "2023-08-22T16:00:00.000+0000",
+                            "isUnifiedRecruitment": false,
+                            "isOverseaEducation": false
+                        }
+                    ],
+                    "highestEducationHistory": {
+                        "educationHistoryId": "2ca48a3e8a1c9718018a2159176f003f",
+                        "schoolName": "福州大学",
+                        "uniformSocialCreditCode": "12350000488002092Y",
+                        "education": "educationBackground09dc4d43e0005",
+                        "profession": "计算机科学技术",
+                        "startDate": "2023-08-22T16:00:00.000+0000",
+                        "endDate": "2023-08-22T16:00:00.000+0000",
+                        "isUnifiedRecruitment": false,
+                        "isOverseaEducation": false
+                    },
+                    "lastGraduatedEducationHistory": {
+                        "educationHistoryId": "2ca48a3e8a1c9718018a2159176f003f",
+                        "schoolName": "福州大学",
+                        "uniformSocialCreditCode": "12350000488002092Y",
+                        "education": "educationBackground09dc4d43e0005",
+                        "profession": "计算机科学技术",
+                        "startDate": "2023-08-22T16:00:00.000+0000",
+                        "endDate": "2023-08-22T16:00:00.000+0000",
+                        "isUnifiedRecruitment": false,
+                        "isOverseaEducation": false
+                    },
+                    "desiredPositions": [
+                        {
+                            "desiredPositionId": "2ca4b9868e1c03dc018e1c98ec0d01e3",
+                            "desiredPositionType": {
+                                "firstLevel": "jobtype5bc468fe501809dc4d1010000",
+                                "secondLevel": "jobtype5bc468fe501809dc4d1000030",
+                                "thirdLevel": "jobtype5bc468fe501809dc4d4100140",
+                                "path": "/jobtype5bc468fe501809dc4d1010000/jobtype5bc468fe501809dc4d1000030/jobtype5bc468fe501809dc4d4100140"
+                            },
+                            "desiredJobNature": "recruitment0eb3dcbcf5041wef69101",
+                            "jobCity": {
+                                "regionId": "350102",
+                                "country": "CHN",
+                                "regionPath": "/350000/350100/350102",
+                                "province": "350000",
+                                "city": "350100",
+                                "county": "350102"
+                            },
+                            "salary": {
+                                "min": 4000,
+                                "max": 13000
+                            },
+                            "companySize": "enterprisesize03570edf504ef69102",
+                            "companyIndustry": {
+                                "industry": "industrytype5bc46fe09dc4d4100001",
+                                "industryIdPath": "/industrytype5bc46fe09dc4d4100000/industrytype5bc46fe09dc4d4100001",
+                                "firstLevelIndustryId": "industrytype5bc46fe09dc4d4100000",
+                                "secondLevelIndustryId": "industrytype5bc46fe09dc4d4100001",
+                                "thirdLevelIndustryId": "",
+                                "fourthLevelIndustryId": ""
+                            }
+                        },
+                        {
+                            "desiredPositionId": "2ca4b9868e1c03dc018e1c9e67c101e8",
+                            "desiredPositionType": {
+                                "firstLevel": "jobtype5bc468fe501809dc4d1000000",
+                                "secondLevel": "jobtype5bc468fe501809dc4d1000010",
+                                "thirdLevel": "jobtype5bc468fe501809dc4d4110150",
+                                "path": "/jobtype5bc468fe501809dc4d1000000/jobtype5bc468fe501809dc4d1000010/jobtype5bc468fe501809dc4d4110150"
+                            },
+                            "desiredJobNature": "recruitment0eb3dcbcf5041wef69101",
+                            "jobCity": {
+                                "regionId": "350102",
+                                "country": "CHN",
+                                "regionPath": "/350000/350100/350102",
+                                "province": "350000",
+                                "city": "350100",
+                                "county": "350102"
+                            },
+                            "salary": {
+                                "min": 8000,
+                                "max": 12000
+                            },
+                            "companySize": "",
+                            "companyIndustry": {}
+                        }
+                    ],
+                    "trainingHistories": [
+                        {
+                            "trainingHistoryId": "40288bd48e3ba25e018e3ba25e3d0000",
+                            "trainingName": "岗前培训",
+                            "startDate": "2024-01-13T16:00:00.000+0000",
+                            "endDate": "2024-02-13T16:00:00.000+0000",
+                            "trainingContent": "前端开发技能培训：集中学习HTML5、CSS3、JavaScript基础及框架应用，掌握React和Vue.js实战经验，及Web性能优化策略。\n"
+                        },
+                        {
+                            "trainingHistoryId": "2ca464718e3b7f64018e3bb78e5c0027",
+                            "trainingName": "测试培训",
+                            "startDate": "2024-02-29T16:00:00.000+0000",
+                            "endDate": "2024-03-12T16:00:00.000+0000",
+                            "trainingContent": "测试培训的培训经历"
+                        },
+                        {
+                            "trainingHistoryId": "40288bd48e3bc574018e3bc5747e0000",
+                            "trainingName": "我的培训经历",
+                            "startDate": "2024-02-29T16:00:00.000+0000",
+                            "endDate": "2024-03-06T16:00:00.000+0000",
+                            "trainingContent": "我的培训经历"
+                        },
+                        {
+                            "trainingHistoryId": "40288fe78e3bd214018e3bd2142d0000",
+                            "trainingName": "测试培训",
+                            "startDate": "2024-02-13T16:00:00.000+0000",
+                            "endDate": "2024-03-13T16:00:00.000+0000",
+                            "trainingContent": "测试培训"
+                        }
+                    ],
+                    "projectHistories": [
+                        {
+                            "projectHistoryId": "2ca464718e3b7f64018e3bb6a2cd0026",
+                            "projectName": "项目1",
+                            "projectRole": "项目负责人",
+                            "startDate": "2024-03-04T16:00:00.000+0000",
+                            "endDate": "2024-03-12T16:00:00.000+0000",
+                            "jobContent": "项目1项目负责人"
+                        },
+                        {
+                            "projectHistoryId": "40288bd48e3bbcc3018e3bbcc3000000",
+                            "projectName": "项目1",
+                            "projectRole": "项目负责人",
+                            "startDate": "2024-03-06T16:00:00.000+0000",
+                            "endDate": "2024-03-10T16:00:00.000+0000",
+                            "jobContent": "项目1项目负责人"
+                        },
+                        {
+                            "projectHistoryId": "40288bd48e3fe73c018e3fedac530005",
+                            "projectName": "测试项目",
+                            "projectRole": "项目负责人",
+                            "startDate": "2024-01-14T16:00:00.000+0000",
+                            "endDate": "2024-03-14T16:00:00.000+0000",
+                            "jobContent": "在测试项目中，担任前端开发负责人，负责项目架构设计、前端框架搭建及功能实现，确保项目按时按质完成，有效提升了团队协作效率及产品质量。\n"
+                        }
+                    ]
+                }
+            },
+            {
+                "_index": "sjj-resume-test-1",
+                "_type": "_doc",
+                "_id": "hU-6Do8BT1vxFVcbcPyw",
+                "_score": 65,
+                "_source": {
+                    "recordCreatedTime": "2023-07-31T12:03:22.385+0000",
+                    "recordUpdatedTime": "2024-04-02T14:08:44.123+0000",
+                    "ownerInfo": {
+                        "platformId": "zhjypte51bc611eeac39801844e39900",
+                        "platformVersionId": "zhjypte51bc611eeac39801844e39911",
+                        "projectId": "zhjypte51bc611eeac3980184Project",
+                        "subProjectId": "zhjypte51bc611eeac3980SubProject",
+                        "unitId": "-1",
+                        "servicerId": "-1"
+                    },
+                    "seekerUserInfo": {
+                        "seekerUserId": "2ca4ed2489a9ca510189aa1526d4014f",
+                        "personId": "2ca4ed2489a9ca510189aa1526d70150",
+                        "idCardType": 1,
+                        "idCard": "350825199910195217",
+                        "workplaceRole": 2,
+                        "graduatedSchool": "12350000488002092Y",
+                        "graduatedDate": "2021-08-29T16:00:00.000+0000",
+                        "jobStatus": "jobseekingstatus570edf504ef69101",
+                        "jobStartDate": "jobentrytimecpdd0edf5041wef69100",
+                        "address": {
+                            "regionId": "350111",
+                            "country": "CHN",
+                            "regionPath": "/350000/350100/350111",
+                            "province": "350000",
+                            "city": "350100",
+                            "county": "350111"
+                        },
+                        "householdLocation": {
+                            "regionId": "350103",
+                            "country": "CHN",
+                            "regionPath": "/350000/350100/350103",
+                            "province": "350000",
+                            "city": "350100",
+                            "county": "350103"
+                        },
+                        "seekerUserBirthday": "1999-10-18T16:00:00.000+0000",
+                        "seekerUserGender": 1,
+                        "advantage": "我是mock的自我评价:我善于思考和创新，能够提出切实可行的解决方案，并通过团队合作将其落实到实际操作中。",
+                        "initialJobDate": "2022-08-16T16:00:00.000+0000"
+                    },
+                    "isOpened": true,
+                    "isPerfect": true,
+                    "createdUserId": "2ca4ed2489a9ca510189aa1526d4014f",
+                    "createdTime": "2023-08-16T07:35:20.619+0000",
+                    "updatedTime": "2024-03-28T07:55:46.246+0000",
+                    "jobHistories": [
+                        {
+                            "jobHistoryId": "2ca4ef5989ab3e110189ab3e97490007",
+                            "companyName": "福建四合创为科技有限公司",
+                            "departmentName": "前端开发部",
+                            "positionHeld": "前端开发工程师",
+                            "positionType": {
+                                "firstLevel": "jobtype5bc468fe501809dc4d1010000",
+                                "secondLevel": "jobtype5bc468fe501809dc4d1000030",
+                                "thirdLevel": "jobtype5bc468fe501809dc4d4100140",
+                                "path": "/jobtype5bc468fe501809dc4d1010000/jobtype5bc468fe501809dc4d1000030/jobtype5bc468fe501809dc4d4100140",
+                                "positionType": "jobtype5bc468fe501809dc4d4100140"
+                            },
+                            "startDate": "2022-01-03T16:00:00.000+0000",
+                            "endDate": "2998-12-31T16:00:00.000+0000",
+                            "jobContent": "111111111"
+                        }
+                    ],
+                    "educationHistories": [
+                        {
+                            "educationHistoryId": "2ca4cd3989f1b8900189f1da5ccd0025",
+                            "schoolName": "福州大学",
+                            "uniformSocialCreditCode": "12350000488002092Y",
+                            "education": "educationBackground09dc4d43e0004",
+                            "profession": "软件工程",
+                            "startDate": "2023-07-22T16:00:00.000+0000",
+                            "endDate": "2023-08-22T16:00:00.000+0000",
+                            "isUnifiedRecruitment": false,
+                            "isOverseaEducation": true
+                        }
+                    ],
+                    "highestEducationHistory": {
+                        "educationHistoryId": "2ca4cd3989f1b8900189f1da5ccd0025",
+                        "schoolName": "福州大学",
+                        "uniformSocialCreditCode": "12350000488002092Y",
+                        "education": "educationBackground09dc4d43e0004",
+                        "profession": "软件工程",
+                        "startDate": "2023-07-22T16:00:00.000+0000",
+                        "endDate": "2023-08-22T16:00:00.000+0000",
+                        "isUnifiedRecruitment": false,
+                        "isOverseaEducation": true
+                    },
+                    "projectHistories": [
+                        {
+                            "projectHistoryId": "2ca4ef5989ab3e110189ab3f99c90009",
+                            "projectName": "数据大屏",
+                            "projectRole": "前端开发",
+                            "startDate": "2023-02-28T16:00:00.000+0000",
+                            "endDate": "2998-12-31T16:00:00.000+0000",
+                            "jobContent": "项目经验：\n\n在城市智能交通系统建设项目中担任主要开发者，负责构建包括智能交通信号灯和车辆追踪系统在内的关键功能。\n成功实施智能交通解决方案，显著提高了城市交通运输效率，并增强了交通安全性。\n\n"
+                        }
+                    ],
+                    "recordIsDeleted": false,
+                    "resumeRedundancy": {
+                        "queryRedundancyInfo": {
+                            "viewedMeRecruiterUserIdList": [
+                                "2ca4ed2889b3ccd10189b3e269a40012",
+                                "2ca4cd3089aa6b8c0189aa6b8fea000b",
+                                "2ca48c3c89be77580189be77582f0000",
+                                "2ca4ef7f89be99220189be99270d000b",
+                                "2ca4ed0489ce1bd30189ce1efd400014",
+                                "2ca4817b89cfbd870189cfbd8be4000b"
+                            ],
+                            "communicatedRecruiterUserIdList": [
+                                "2ca4cd3089aa6b8c0189aa6b8fea000b"
+                            ]
+                        },
+                        "employingInPlatformUnit": 0,
+                        "everEmployInPlatformUnit": 0,
+                        "lastSocialSecurityPaymentInfo": {
+                            "paymentStatus": 0
+                        }
+                    },
+                    "lastGraduatedEducationHistory": {
+                        "educationHistoryId": "2ca4cd3989f1b8900189f1da5ccd0025",
+                        "schoolName": "福州大学",
+                        "uniformSocialCreditCode": "12350000488002092Y",
+                        "education": "educationBackground09dc4d43e0004",
+                        "profession": "软件工程",
+                        "startDate": "2023-07-22T16:00:00.000+0000",
+                        "endDate": "2023-08-22T16:00:00.000+0000",
+                        "isUnifiedRecruitment": false,
+                        "isOverseaEducation": true
+                    },
+                    "fileResumes": [
+                        {
+                            "fileResumeId": "2ca4aaac89fd3ca30189fd451f120004",
+                            "name": "李世锋的简历.pdf",
+                            "path": "/ms-obsfile/protected/hwobs/zhjypte51bc611eeac39801844e39911/zhjypte51bc611eeac3980SubProject/2023/08/16/2ca4ed0789e287610189fd451bd30098.pdf",
+                            "createdUserId": "2ca4ed2489a9ca510189aa1526d4014f",
+                            "createdTime": "2023-08-16T07:35:12.914+0000",
+                            "updatedTime": "2023-08-16T07:35:12.914+0000"
+                        },
+                        {
+                            "fileResumeId": "2ca4aaac89fd3ca30189fd453d2b000a",
+                            "name": "数据库表结构.doc",
+                            "path": "/ms-obsfile/protected/hwobs/zhjypte51bc611eeac39801844e39911/zhjypte51bc611eeac3980SubProject/2023/08/16/2ca4ed0789e287610189fd453ba60099.doc",
+                            "createdUserId": "2ca4ed2489a9ca510189aa1526d4014f",
+                            "createdTime": "2023-08-16T07:35:20.619+0000",
+                            "updatedTime": "2023-08-16T07:35:20.619+0000"
+                        }
+                    ],
+                    "skillTags": [],
+                    "desiredPositions": [
+                        {
+                            "desiredPositionId": "2ca48a048a263d76018a2bc144e8005f",
+                            "desiredPositionType": {
+                                "firstLevel": "jobtype5bc468fe501809dc4d1010000",
+                                "secondLevel": "jobtype5bc468fe501809dc4d1000030",
+                                "thirdLevel": "jobtype5bc468fe501809dc4d4100140",
+                                "path": "/jobtype5bc468fe501809dc4d1010000/jobtype5bc468fe501809dc4d1000030/jobtype5bc468fe501809dc4d4100140"
+                            },
+                            "desiredJobNature": "recruitment0eb3dcbcf5041wef69101",
+                            "jobCity": {
+                                "regionId": "350102",
+                                "country": "CHN",
+                                "regionPath": "/350000/350100/350102",
+                                "province": "350000",
+                                "city": "350100",
+                                "county": "350102"
+                            },
+                            "salary": {
+                                "min": 10000,
+                                "max": 18000
+                            },
+                            "companySize": "enterprisesize03570edf504ef69106",
+                            "companyIndustry": {
+                                "industry": "industrytype5bc46fe09dc4d4100001",
+                                "industryIdPath": "/industrytype5bc46fe09dc4d4100000/industrytype5bc46fe09dc4d4100001",
+                                "firstLevelIndustryId": "industrytype5bc46fe09dc4d4100000",
+                                "secondLevelIndustryId": "industrytype5bc46fe09dc4d4100001",
+                                "thirdLevelIndustryId": "",
+                                "fourthLevelIndustryId": ""
+                            }
+                        }
+                    ],
+                    "trainingHistories": [
+                        {
+                            "trainingHistoryId": "2ca48a3e8a1c9718018a257ed3ed0052",
+                            "trainingName": "四合",
+                            "startDate": "2023-07-23T16:00:00.000+0000",
+                            "endDate": "2023-08-23T16:00:00.000+0000",
+                            "trainingContent": "培训经历：\n\n领导力培训课程：掌握团队管理、决策制定及沟通技巧，有效提升领导力和团队协作能力。\n\n"
+                        }
+                    ],
+                    "languages": [],
+                    "certificates": [
+                        {
+                            "certificateId": "2ca48a048a263d76018a2bbe26e2005e",
+                            "certificateName": "py",
+                            "givenDate": "2023-07-24T16:00:00.000+0000"
+                        }
+                    ],
+                    "openedStatusTimeChange": {
+                        "true": "2023-08-25T02:00:13.409+0000"
+                    }
+                }
+            },
+            {
+                "_index": "sjj-resume-test-1",
+                "_type": "_doc",
+                "_id": "1yyfDo8BT1vxFVcbBQ39",
+                "_score": 65,
+                "_source": {
+                    "recordCreatedTime": "2023-07-31T12:03:21.793+0000",
+                    "recordUpdatedTime": "2023-09-06T10:02:30.495+0000",
+                    "ownerInfo": {
+                        "platformId": "zhjypte51bc611eeac39801844e39900",
+                        "platformVersionId": "zhjypte51bc611eeac39801844e39911",
+                        "projectId": "zhjypte51bc611eeac3980184Project",
+                        "subProjectId": "zhjypte51bc611eeac3980SubProject",
+                        "unitId": "-1",
+                        "servicerId": "-1"
+                    },
+                    "seekerUserInfo": {
+                        "seekerUserId": "2ca4f0b889aafa6b0189aafb5d320002",
+                        "personId": "2ca4f0b889aafa6b0189aafb5d3d0003",
+                        "idCardType": 1,
+                        "idCard": "350121199212276737",
+                        "workplaceRole": 2,
+                        "graduatedSchool": "福州大学",
+                        "graduatedDate": "2023-07-25T16:00:00.000+0000",
+                        "jobStatus": "jobseekingstatus570edf504ef69101",
+                        "jobStartDate": "jobentrytimecpdd0edf5041wef69100",
+                        "address": {
+                            "regionId": "310101",
+                            "country": "CHN",
+                            "regionPath": "/310000/310101",
+                            "province": "310000",
+                            "city": "",
+                            "county": "310101"
+                        },
+                        "householdLocation": {
+                            "regionId": "110100",
+                            "country": "CHN",
+                            "regionPath": "/110000/110100",
+                            "province": "110000",
+                            "city": "",
+                            "county": "110100"
+                        },
+                        "advantage": "广晟有色是是是"
+                    },
+                    "isOpened": false,
+                    "isPerfect": true,
+                    "createdUserId": "2ca4f0b889aafa6b0189aafb5d320002",
+                    "createdTime": "2023-08-23T08:44:30.670+0000",
+                    "updatedTime": "2023-08-23T08:52:19.260+0000",
+                    "jobHistories": [
+                        {
+                            "jobHistoryId": "2ca4f0b889aafa6b0189aafdae4c0005",
+                            "companyName": "11",
+                            "departmentName": "22",
+                            "positionHeld": "33",
+                            "positionType": {
+                                "firstLevel": "jobtype5bc468fe501809dc4d1000000",
+                                "secondLevel": "jobtype5bc468fe501809dc4d1000010",
+                                "thirdLevel": "jobtype5bc468fe501809dc4d4110150",
+                                "path": "/jobtype5bc468fe501809dc4d1000000/jobtype5bc468fe501809dc4d1000010/jobtype5bc468fe501809dc4d4110150",
+                                "positionType": "jobtype5bc468fe501809dc4d4110150"
+                            },
+                            "startDate": "2023-07-18T16:00:00.000+0000",
+                            "endDate": "2023-07-28T16:00:00.000+0000",
+                            "jobContent": "2"
+                        }
+                    ],
+                    "educationHistories": [
+                        {
+                            "educationHistoryId": "2ca4f0b889aafa6b0189aafdec7d0006",
+                            "schoolName": "福州大学",
+                            "education": "educationBackground09dc4d43e0008",
+                            "profession": "11",
+                            "startDate": "2023-07-05T16:00:00.000+0000",
+                            "endDate": "2023-07-27T16:00:00.000+0000",
+                            "isUnifiedRecruitment": true,
+                            "isOverseaEducation": true
+                        }
+                    ],
+                    "highestEducationHistory": {
+                        "educationHistoryId": "2ca4f0b889aafa6b0189aafdec7d0006",
+                        "schoolName": "福州大学",
+                        "education": "educationBackground09dc4d43e0008",
+                        "profession": "11",
+                        "startDate": "2023-07-05T16:00:00.000+0000",
+                        "endDate": "2023-07-27T16:00:00.000+0000",
+                        "isUnifiedRecruitment": true,
+                        "isOverseaEducation": true
+                    },
+                    "projectHistories": [
+                        {
+                            "projectHistoryId": "2ca4f0b889aafa6b0189aafe0e720007",
+                            "projectName": "时高时低",
+                            "projectRole": "阿发",
+                            "startDate": "2023-07-11T16:00:00.000+0000",
+                            "endDate": "2023-07-25T16:00:00.000+0000",
+                            "jobContent": "撒旦法 "
+                        }
+                    ],
+                    "recordIsDeleted": false,
+                    "openedStatusTimeChange": {
+                        "true": "2023-08-23T08:40:13.239+0000",
+                        "false": "2023-08-23T08:40:14.299+0000"
+                    },
+                    "desiredPositions": [
+                        {
+                            "desiredPositionId": "4028997589b0d8c00189b0dba9480003",
+                            "desiredPositionType": {
+                                "firstLevel": "jobtype5bc468fe501809dc4d1000000",
+                                "secondLevel": "jobtype5bc468fe501809dc4d1000010",
+                                "thirdLevel": "jobtype5bc468fe501809dc4d4110150",
+                                "path": "/jobtype5bc468fe501809dc4d1000000/jobtype5bc468fe501809dc4d1000010/jobtype5bc468fe501809dc4d4110150"
+                            },
+                            "desiredJobNature": "recruitment0eb3dcbcf5041wef69101",
+                            "jobCity": {
+                                "regionId": "120101",
+                                "country": "CHN",
+                                "regionPath": "/120000/120101",
+                                "province": "120000",
+                                "city": "",
+                                "county": "120101"
+                            },
+                            "salary": {
+                                "min": 1,
+                                "max": 3
+                            },
+                            "companySize": "enterprisesize03570edf504ef69103",
+                            "companyIndustry": {
+                                "industryIdPath": "/industrytype5bc46fe09dc4d4100000/industrytype5bc46fe09dc4d4100005",
+                                "firstLevelIndustryId": "industrytype5bc46fe09dc4d4100000",
+                                "secondLevelIndustryId": "industrytype5bc46fe09dc4d4100005"
+                            }
+                        },
+                        {
+                            "desiredPositionId": "40289a7a8a21903d018a21983abc0002",
+                            "desiredPositionType": {
+                                "firstLevel": "/jobtype5bc468fe501809dc4d1010000/jobtype5bc468fe501809dc4d1000020/jobtype5bc468fe501809dc4d4100000",
+                                "secondLevel": "",
+                                "thirdLevel": "",
+                                "path": "//jobtype5bc468fe501809dc4d1010000/jobtype5bc468fe501809dc4d1000020/jobtype5bc468fe501809dc4d4100000"
+                            },
+                            "desiredJobNature": "",
+                            "jobCity": {
+                                "regionId": "120100",
+                                "country": "CHN",
+                                "regionPath": "/120000/120100",
+                                "province": "120000",
+                                "city": "",
+                                "county": "120100"
+                            },
+                            "salary": {},
+                            "companySize": "enterprisesize03570edf504ef69101",
+                            "companyIndustry": {
+                                "industry": "/industrytype5bc46fe09dc4d4100000/industrytype5bc46fe09dc4d4100001",
+                                "industryIdPath": "//industrytype5bc46fe09dc4d4100000/industrytype5bc46fe09dc4d4100001",
+                                "firstLevelIndustryId": "/industrytype5bc46fe09dc4d4100000/industrytype5bc46fe09dc4d4100001",
+                                "secondLevelIndustryId": "",
+                                "thirdLevelIndustryId": "",
+                                "fourthLevelIndustryId": ""
+                            }
+                        }
+                    ],
+                    "trainingHistories": [
+                        {
+                            "trainingHistoryId": "4028997389b0ba650189b0dbf44f0003",
+                            "trainingName": "是发达",
+                            "startDate": "2023-08-14T16:00:00.000+0000",
+                            "endDate": "2023-08-30T16:00:00.000+0000",
+                            "trainingContent": "申达股份省公司"
+                        }
+                    ],
+                    "languages": [
+                        {
+                            "languageAbilityId": "4028997589b0d8c00189b0dc7bfb0004",
+                            "languageType": "language0c37cb3fee3cdafd43efe000",
+                            "listeningAndSpeakingAbility": 2,
+                            "readingAndWritingAbility": 2
+                        }
+                    ],
+                    "certificates": [
+                        {
+                            "certificateId": "4028997389b0ba650189b0dc961b0004",
+                            "certificateName": "大概发",
+                            "givenDate": "2023-08-08T16:00:00.000+0000"
+                        }
+                    ],
+                    "skillTags": [
+                        {
+                            "skillTagId": "4028997389b0ba650189b0dcaf780005",
+                            "skillTagName": "22",
+                            "usageTime": 2,
+                            "masteryLevel": 2
+                        }
+                    ],
+                    "resumeRedundancy": {
+                        "queryRedundancyInfo": {
+                            "viewedMeRecruiterUserIdList": [
+                                "2ca4ed2889b3ccd10189b3e269a40012",
+                                "2ca4cd3089aa6b8c0189aa6b8fea000b",
+                                "2ca48c3c89be77580189be77582f0000",
+                                "2ca4ef7f89be99220189be99270d000b",
+                                "2ca4ed0489ce1bd30189ce1efd400014",
+                                "2ca4817b89cfbd870189cfbd8be4000b"
+                            ]
+                        },
+                        "employingInPlatformUnit": 0,
+                        "everEmployInPlatformUnit": 0,
+                        "lastSocialSecurityPaymentInfo": {
+                            "paymentStatus": 0
+                        }
+                    },
+                    "lastGraduatedEducationHistory": {
+                        "educationHistoryId": "2ca4f0b889aafa6b0189aafdec7d0006",
+                        "schoolName": "福州大学",
+                        "education": "educationBackground09dc4d43e0008",
+                        "profession": "11",
+                        "startDate": "2023-07-05T16:00:00.000+0000",
+                        "endDate": "2023-07-27T16:00:00.000+0000",
+                        "isUnifiedRecruitment": true,
+                        "isOverseaEducation": true
+                    },
+                    "fileResumes": [
+                        {
+                            "fileResumeId": "2ca48a3e8a1c9718018a2190dcc10041",
+                            "name": "声明.pdf",
+                            "path": "/ms-obsfile/protected/hwobs/zhjypte51bc611eeac39801844e39911/zhjypte51bc611eeac3980SubProject/2023/08/23/2ca4ed0789e28761018a2190da1d0189.pdf",
+                            "createdUserId": "2ca4f0b889aafa6b0189aafb5d320002",
+                            "createdTime": "2023-08-23T08:44:16.449+0000",
+                            "updatedTime": "2023-08-23T08:44:16.449+0000"
+                        },
+                        {
+                            "fileResumeId": "40289a7a8a21903d018a2191144e0001",
+                            "name": "声明.pdf",
+                            "path": "/ms-obsfile/protected/hwobs/zhjypte51bc611eeac39801844e39911/zhjypte51bc611eeac3980SubProject/2023/08/23/2ca4ed0789e28761018a219122b0018a.pdf",
+                            "createdUserId": "2ca4f0b889aafa6b0189aafb5d320002",
+                            "createdTime": "2023-08-23T08:44:30.670+0000",
+                            "updatedTime": "2023-08-23T08:44:30.670+0000"
+                        }
+                    ]
+                }
+            },
+            {
+                "_index": "sjj-resume-test-1",
+                "_type": "_doc",
+                "_id": "Xke0Do8BT1vxFVcbKUfX",
+                "_score": 65,
+                "_source": {
+                    "recordCreatedTime": "2023-08-02T07:16:27.472+0000",
+                    "recordUpdatedTime": "2023-09-06T10:02:53.377+0000",
+                    "ownerInfo": {
+                        "platformId": "zhjypte51bc611eeac39801844e39900",
+                        "platformVersionId": "zhjypte51bc611eeac39801844e39911",
+                        "projectId": "zhjypte51bc611eeac3980184Project",
+                        "subProjectId": "zhjypte51bc611eeac3980SubProject",
+                        "unitId": "-1",
+                        "servicerId": "-1"
+                    },
+                    "seekerUserInfo": {
+                        "seekerUserId": "4028997589b5197c0189b5197c1e0001",
+                        "personId": "4028997589b5197c0189b5197c330002",
+                        "idCardType": 1,
+                        "idCard": "35032220000406621X",
+                        "seekerUserGender": 1,
+                        "workplaceRole": 2,
+                        "graduatedSchool": "12350000488002092Y",
+                        "graduatedDate": "2021-07-31T16:00:00.000+0000",
+                        "jobStatus": "jobseekingstatus570edf504ef69102",
+                        "jobStartDate": "jobentrytimecpdd0edf5041wef69103",
+                        "address": {
+                            "regionId": "350102",
+                            "country": "CHN",
+                            "regionPath": "/350000/350100/350102",
+                            "province": "350000",
+                            "city": "350100",
+                            "county": "350102"
+                        },
+                        "householdLocation": {
+                            "regionId": "350322",
+                            "country": "CHN",
+                            "regionPath": "/350000/350300/350322",
+                            "province": "350000",
+                            "city": "350300",
+                            "county": "350322"
+                        },
+                        "seekerUserBirthday": "2000-04-06T16:00:00.000+0000",
+                        "advantage": "自我评价很好",
+                        "initialJobDate": "2020-07-31T16:00:00.000+0000"
+                    },
+                    "isOpened": true,
+                    "isPerfect": false,
+                    "createdUserId": "4028997589b5197c0189b5197c1e0001",
+                    "createdTime": "2023-08-02T09:27:34.756+0000",
+                    "updatedTime": "2023-08-25T01:48:30.958+0000",
+                    "recordIsDeleted": false,
+                    "resumeRedundancy": {
+                        "queryRedundancyInfo": {
+                            "communicatedRecruiterUserIdList": [
+                                "2ca4ed2489a9ca510189aa0993490148",
+                                "2ca4ed2889b3ccd10189b3e269a40012"
+                            ],
+                            "viewedMeRecruiterUserIdList": [
+                                "2ca4ed2489a9ca510189aa0993490148",
+                                "2ca4ed2889b3ccd10189b3e269a40012",
+                                "2ca4cd3089aa6b8c0189aa6b8fea000b",
+                                "2ca48c3c89be77580189be77582f0000",
+                                "2ca4ef7f89be99220189be99270d000b",
+                                "2ca4ed0489ce1bd30189ce1efd400014",
+                                "2ca4817b89cfbd870189cfbd8be4000b"
+                            ]
+                        },
+                        "employingInPlatformUnit": 1,
+                        "everEmployInPlatformUnit": 1,
+                        "lastSocialSecurityPaymentInfo": {
+                            "paymentStatus": 0
+                        }
+                    },
+                    "fileResumes": [
+                        {
+                            "fileResumeId": "2ca4b87e89b58d270189b592f6640004",
+                            "name": "华博股份综函〔2022〕13号 关于2023年元旦放假的通知.pdf",
+                            "path": "/ms-obsfile/protected/hwobs/zhjypte51bc611eeac39801844e39911/zhjypte51bc611eeac3980SubProject/2023/08/02/2ca4ef7a89ab415a0189b592f1570101.pdf",
+                            "createdUserId": "4028997589b5197c0189b5197c1e0001",
+                            "createdTime": "2023-08-02T09:27:34.756+0000",
+                            "updatedTime": "2023-08-02T09:27:34.756+0000"
+                        }
+                    ],
+                    "openedStatusTimeChange": {
+                        "true": "2023-08-24T07:41:36.308+0000",
+                        "false": "2023-08-24T07:41:35.999+0000"
+                    },
+                    "educationHistories": [
+                        {
+                            "educationHistoryId": "2ca48c0789b8c7610189b8c761990000",
+                            "schoolName": "12350000488002092Y",
+                            "education": "educationBackground09dc4d43e0007",
+                            "profession": "软件工程",
+                            "startDate": "2022-07-31T16:00:00.000+0000",
+                            "endDate": "2022-08-24T16:00:00.000+0000",
+                            "isUnifiedRecruitment": true,
+                            "isOverseaEducation": false
+                        }
+                    ],
+                    "highestEducationHistory": {
+                        "educationHistoryId": "2ca48c0789b8c7610189b8c761990000",
+                        "schoolName": "12350000488002092Y",
+                        "education": "educationBackground09dc4d43e0007",
+                        "profession": "软件工程",
+                        "startDate": "2022-07-31T16:00:00.000+0000",
+                        "endDate": "2022-08-24T16:00:00.000+0000",
+                        "isUnifiedRecruitment": true,
+                        "isOverseaEducation": false
+                    },
+                    "jobHistories": [
+                        {
+                            "jobHistoryId": "2ca4ed1a89bdf6f00189bdf789790001",
+                            "companyName": "华博教育",
+                            "departmentName": "大前端",
+                            "positionHeld": "打工人",
+                            "positionType": {
+                                "firstLevel": "jobtype5bc468fe501809dc4d1010000",
+                                "secondLevel": "jobtype5bc468fe501809dc4d1000030",
+                                "thirdLevel": "jobtype5bc468fe501809dc4d4100140",
+                                "path": "/jobtype5bc468fe501809dc4d1010000/jobtype5bc468fe501809dc4d1000030/jobtype5bc468fe501809dc4d4100140",
+                                "positionType": "jobtype5bc468fe501809dc4d4100140"
+                            },
+                            "startDate": "2023-07-31T16:00:00.000+0000",
+                            "endDate": "2023-08-13T16:00:00.000+0000",
+                            "jobContent": "干活"
+                        }
+                    ],
+                    "projectHistories": [
+                        {
+                            "projectHistoryId": "40289a7a89bdf3d30189bdfa21af0003",
+                            "projectName": "智慧就业",
+                            "projectRole": "前端",
+                            "startDate": "2023-08-01T16:00:00.000+0000",
+                            "endDate": "2023-08-09T16:00:00.000+0000",
+                            "jobContent": "写代码"
+                        }
+                    ],
+                    "trainingHistories": [
+                        {
+                            "trainingHistoryId": "40289a7a89bdf3d30189bdfa49a80004",
+                            "trainingName": "培训一下",
+                            "startDate": "2023-08-07T16:00:00.000+0000",
+                            "endDate": "2023-08-28T16:00:00.000+0000",
+                            "trainingContent": ""
+                        }
+                    ],
+                    "languages": [
+                        {
+                            "languageAbilityId": "4028977b89bdef8a0189bdfac8140004",
+                            "languageType": "language0c37cb3fee3cdafd43efe001",
+                            "listeningAndSpeakingAbility": 4,
+                            "readingAndWritingAbility": 4
+                        }
+                    ],
+                    "certificates": [
+                        {
+                            "certificateId": "2ca4645589bdee090189bdfae28d0001",
+                            "certificateName": "证书1",
+                            "givenDate": "2023-08-03T16:00:00.000+0000"
+                        }
+                    ],
+                    "skillTags": [
+                        {
+                            "skillTagId": "40289a7a89bdf3d30189bdfb02ae0005",
+                            "skillTagName": "技能1",
+                            "usageTime": 12,
+                            "masteryLevel": 3
+                        }
+                    ],
+                    "desiredPositions": [
+                        {
+                            "desiredPositionId": "4028997389b5e9c70189b650fd4c000b",
+                            "desiredPositionType": {
+                                "firstLevel": "jobtype5bc468fe501809dc4d1010000",
+                                "secondLevel": "jobtype5bc468fe501809dc4d1000030",
+                                "thirdLevel": "jobtype5bc468fe501809dc4d4100140",
+                                "path": "/jobtype5bc468fe501809dc4d1010000/jobtype5bc468fe501809dc4d1000030/jobtype5bc468fe501809dc4d4100140"
+                            },
+                            "jobCity": {
+                                "regionId": "120101",
+                                "country": "CHN",
+                                "regionPath": "/120000/120101",
+                                "province": "120000",
+                                "city": "",
+                                "county": "120101"
+                            },
+                            "salary": {
+                                "max": 10000
+                            },
+                            "companySize": "enterprisesize03570edf504ef69104",
+                            "companyIndustry": {
+                                "industry": "industrytype5bc46fe09dc4d4100006",
+                                "industryIdPath": "/industrytype5bc46fe09dc4d4100000/industrytype5bc46fe09dc4d4100006",
+                                "firstLevelIndustryId": "industrytype5bc46fe09dc4d4100000",
+                                "secondLevelIndustryId": "industrytype5bc46fe09dc4d4100006",
+                                "thirdLevelIndustryId": "",
+                                "fourthLevelIndustryId": ""
+                            }
+                        },
+                        {
+                            "desiredPositionId": "2ca4340a89be02100189be06ba860006",
+                            "desiredPositionType": {
+                                "firstLevel": "jobtype5bc468fe501809dc4d1010000",
+                                "secondLevel": "jobtype5bc468fe501809dc4d1000030",
+                                "thirdLevel": "jobtype5bc468fe501809dc4d4100140",
+                                "path": "/jobtype5bc468fe501809dc4d1010000/jobtype5bc468fe501809dc4d1000030/jobtype5bc468fe501809dc4d4100140"
+                            },
+                            "desiredJobNature": "recruitment0eb3dcbcf5041wef69102",
+                            "jobCity": {
+                                "regionId": "120101",
+                                "country": "CHN",
+                                "regionPath": "/120000/120101",
+                                "province": "120000",
+                                "city": "",
+                                "county": "120101"
+                            },
+                            "salary": {
+                                "min": 2000
+                            },
+                            "companySize": "enterprisesize03570edf504ef69101",
+                            "companyIndustry": {
+                                "industry": "industrytype5bc46fe09dc4d4100003",
+                                "industryIdPath": "/industrytype5bc46fe09dc4d4100000/industrytype5bc46fe09dc4d4100003",
+                                "firstLevelIndustryId": "industrytype5bc46fe09dc4d4100000",
+                                "secondLevelIndustryId": "industrytype5bc46fe09dc4d4100003",
+                                "thirdLevelIndustryId": "",
+                                "fourthLevelIndustryId": ""
+                            }
+                        }
+                    ],
+                    "lastGraduatedEducationHistory": {
+                        "educationHistoryId": "2ca48c0789b8c7610189b8c761990000",
+                        "schoolName": "12350000488002092Y",
+                        "education": "educationBackground09dc4d43e0007",
+                        "profession": "软件工程",
+                        "startDate": "2022-07-31T16:00:00.000+0000",
+                        "endDate": "2022-08-24T16:00:00.000+0000",
+                        "isUnifiedRecruitment": true,
+                        "isOverseaEducation": false
+                    }
+                }
+            },
+            {
+                "_index": "sjj-resume-test-1",
+                "_type": "_doc",
+                "_id": "0U25Do8BT1vxFVcbFPFc",
+                "_score": 65,
+                "_source": {
+                    "recordCreatedTime": "2023-08-01T01:13:21.735+0000",
+                    "recordUpdatedTime": "2023-09-06T10:02:53.463+0000",
+                    "ownerInfo": {
+                        "platformId": "zhjypte51bc611eeac39801844e39900",
+                        "platformVersionId": "zhjypte51bc611eeac39801844e39911",
+                        "projectId": "zhjypte51bc611eeac3980184Project",
+                        "subProjectId": "zhjypte51bc611eeac3980SubProject",
+                        "unitId": "-1",
+                        "servicerId": "-1"
+                    },
+                    "seekerUserInfo": {
+                        "seekerUserId": "2ca4cd1889abe1ba0189aea7460b0013",
+                        "personId": "2ca4cd1889abe1ba0189aea7461e0014",
+                        "idCardType": 1,
+                        "idCard": "350582199904110513",
+                        "workplaceRole": 2,
+                        "graduatedSchool": "福州大学",
+                        "graduatedDate": "2021-06-30T16:00:00.000+0000",
+                        "jobStatus": "jobseekingstatus570edf504ef69101",
+                        "jobStartDate": "jobentrytimecpdd0edf5041wef69100",
+                        "address": {
+                            "regionId": "350102",
+                            "country": "CHN",
+                            "regionPath": "/350000/350100/350102",
+                            "province": "350000",
+                            "city": "350100",
+                            "county": "350102"
+                        },
+                        "householdLocation": {
+                            "regionId": "350582",
+                            "country": "CHN",
+                            "regionPath": "/350000/350500/350582",
+                            "province": "350000",
+                            "city": "350500",
+                            "county": "350582"
+                        },
+                        "seekerUserBirthday": "1999-04-10T16:00:00.000+0000"
+                    },
+                    "isOpened": true,
+                    "isPerfect": true,
+                    "createdUserId": "2ca4cd1889abe1ba0189aea7460b0013",
+                    "createdTime": "2023-08-01T08:41:12.365+0000",
+                    "updatedTime": "2023-08-25T02:17:31.901+0000",
+                    "recordIsDeleted": false,
+                    "jobHistories": [
+                        {
+                            "jobHistoryId": "2ca4cd1889abe1ba0189aea8ce3c0017",
+                            "companyName": "华博",
+                            "departmentName": "大前端",
+                            "positionHeld": "前端工程师",
+                            "positionType": {
+                                "firstLevel": "jobtype5bc468fe501809dc4d1010000",
+                                "secondLevel": "jobtype5bc468fe501809dc4d1000030",
+                                "thirdLevel": "jobtype5bc468fe501809dc4d4100140",
+                                "path": "/jobtype5bc468fe501809dc4d1010000/jobtype5bc468fe501809dc4d1000030/jobtype5bc468fe501809dc4d4100140",
+                                "positionType": "jobtype5bc468fe501809dc4d4100140"
+                            },
+                            "startDate": "2022-04-06T16:00:00.000+0000",
+                            "endDate": "2023-07-31T16:00:00.000+0000",
+                            "jobContent": "啥都不会，我是废物"
+                        }
+                    ],
+                    "educationHistories": [
+                        {
+                            "educationHistoryId": "2ca4cd1889abe1ba0189aea92bd20018",
+                            "schoolName": "福州大学",
+                            "education": "educationBackground09dc4d43e0005",
+                            "profession": "软件工程",
+                            "startDate": "2023-07-31T16:00:00.000+0000",
+                            "endDate": "2023-08-09T16:00:00.000+0000",
+                            "isUnifiedRecruitment": false,
+                            "isOverseaEducation": false
+                        }
+                    ],
+                    "highestEducationHistory": {
+                        "educationHistoryId": "2ca4cd1889abe1ba0189aea92bd20018",
+                        "schoolName": "福州大学",
+                        "education": "educationBackground09dc4d43e0005",
+                        "profession": "软件工程",
+                        "startDate": "2023-07-31T16:00:00.000+0000",
+                        "endDate": "2023-08-09T16:00:00.000+0000",
+                        "isUnifiedRecruitment": false,
+                        "isOverseaEducation": false
+                    },
+                    "resumeRedundancy": {
+                        "queryRedundancyInfo": {
+                            "communicatedRecruiterUserIdList": [
+                                "2ca4ed2489a9ca510189aa0993490148",
+                                "2ca4cd3089aa6b8c0189aa6b8fea000b"
+                            ],
+                            "viewedMeRecruiterUserIdList": [
+                                "2ca4ed2489a9ca510189aa0993490148",
+                                "2ca4ed2889b3ccd10189b3e269a40012",
+                                "2ca4cd3089aa6b8c0189aa6b8fea000b",
+                                "2ca48c3c89be77580189be77582f0000",
+                                "2ca4ef7f89be99220189be99270d000b",
+                                "2ca4ed0489ce1bd30189ce1efd400014",
+                                "2ca4817b89cfbd870189cfbd8be4000b"
+                            ]
+                        },
+                        "employingInPlatformUnit": 0,
+                        "everEmployInPlatformUnit": 0,
+                        "lastSocialSecurityPaymentInfo": {
+                            "paymentStatus": 0
+                        }
+                    },
+                    "fileResumes": [
+                        {
+                            "fileResumeId": "4028987a89b042250189b04225ad0000",
+                            "name": "人社行业培训模板.pdf",
+                            "path": "/ms-obsfile/protected/hwobs/zhjypte51bc611eeac39801844e39911/zhjypte51bc611eeac3980SubProject/2023/08/01/2ca4ef7a89ab415a0189b0422201006f.pdf",
+                            "createdUserId": "2ca4cd1889abe1ba0189aea7460b0013",
+                            "createdTime": "2023-08-01T08:41:12.365+0000",
+                            "updatedTime": "2023-08-01T08:41:12.365+0000"
+                        }
+                    ],
+                    "desiredPositions": [
+                        {
+                            "desiredPositionId": "2ca4b84289b502440189b50244ce0000",
+                            "desiredPositionType": {
+                                "firstLevel": "jobtype5bc468fe501809dc4d1010000",
+                                "secondLevel": "jobtype5bc468fe501809dc4d1000030",
+                                "thirdLevel": "jobtype5bc468fe501809dc4d4100140",
+                                "path": "/jobtype5bc468fe501809dc4d1010000/jobtype5bc468fe501809dc4d1000030/jobtype5bc468fe501809dc4d4100140"
+                            },
+                            "desiredJobNature": "recruitment0eb3dcbcf5041wef69101",
+                            "jobCity": {
+                                "regionId": "350102",
+                                "country": "CHN",
+                                "regionPath": "/350000/350100/350102",
+                                "province": "350000",
+                                "city": "350100",
+                                "county": "350102"
+                            },
+                            "salary": {
+                                "min": 1,
+                                "max": 17
+                            },
+                            "companySize": "enterprisesize03570edf504ef69100",
+                            "companyIndustry": {
+                                "industryIdPath": "/industrytype5bc46fe09dc4d4100000",
+                                "firstLevelIndustryId": "industrytype5bc46fe09dc4d4100000"
+                            }
+                        },
+                        {
+                            "desiredPositionId": "2ca4b87189b50f4b0189b50f59470001",
+                            "desiredPositionType": {
+                                "firstLevel": "jobtype5bc468fe501809dc4d1000000",
+                                "secondLevel": "jobtype5bc468fe501809dc4d1000010",
+                                "thirdLevel": "jobtype5bc468fe501809dc4d4110150",
+                                "path": "/jobtype5bc468fe501809dc4d1000000/jobtype5bc468fe501809dc4d1000010/jobtype5bc468fe501809dc4d4110150"
+                            },
+                            "desiredJobNature": "recruitment0eb3dcbcf5041wef69102",
+                            "jobCity": {
+                                "regionId": "110100",
+                                "country": "CHN",
+                                "regionPath": "/110000/110100",
+                                "province": "110000",
+                                "city": "",
+                                "county": "110100"
+                            },
+                            "salary": {
+                                "min": 3,
+                                "max": 5
+                            },
+                            "companySize": "enterprisesize03570edf504ef69104",
+                            "companyIndustry": {
+                                "industryIdPath": "/industrytype5bc46fe09dc4d4100000/industrytype5bc46fe09dc4d4100003",
+                                "firstLevelIndustryId": "industrytype5bc46fe09dc4d4100000",
+                                "secondLevelIndustryId": "industrytype5bc46fe09dc4d4100003"
+                            }
+                        }
+                    ],
+                    "openedStatusTimeChange": {
+                        "true": "2023-08-02T07:15:18.302+0000"
+                    },
+                    "lastGraduatedEducationHistory": {
+                        "educationHistoryId": "2ca4cd1889abe1ba0189aea92bd20018",
+                        "schoolName": "福州大学",
+                        "education": "educationBackground09dc4d43e0005",
+                        "profession": "软件工程",
+                        "startDate": "2023-07-31T16:00:00.000+0000",
+                        "endDate": "2023-08-09T16:00:00.000+0000",
+                        "isUnifiedRecruitment": false,
+                        "isOverseaEducation": false
+                    }
+                }
+            },
+            {
+                "_index": "sjj-resume-test-1",
+                "_type": "_doc",
+                "_id": "hiyfDo8BT1vxFVcbBA1g",
+                "_score": 65,
+                "_source": {
+                    "recordCreatedTime": "2023-07-31T12:03:20.662+0000",
+                    "recordUpdatedTime": "2023-09-06T10:00:46.774+0000",
+                    "ownerInfo": {
+                        "platformId": "zhjypte51bc611eeac39801844e39900",
+                        "platformVersionId": "zhjypte51bc611eeac39801844e39911",
+                        "projectId": "zhjypte51bc611eeac3980184Project",
+                        "subProjectId": "zhjypte51bc611eeac3980SubProject",
+                        "unitId": "-1",
+                        "servicerId": "-1"
+                    },
+                    "seekerUserInfo": {
+                        "seekerUserId": "2ca4cd3089aa6b8c0189aaa6c68c0025",
+                        "personId": "2ca4cd3089aa6b8c0189aaa6c6900026",
+                        "idCardType": 1,
+                        "idCard": "35032220000406621X",
+                        "workplaceRole": 2,
+                        "graduatedSchool": "12350000488002092Y",
+                        "graduatedDate": "2021-06-30T16:00:00.000+0000",
+                        "jobStatus": "jobseekingstatus570edf504ef69102",
+                        "jobStartDate": "jobentrytimecpdd0edf5041wef69103",
+                        "address": {
+                            "regionId": "310101",
+                            "country": "CHN",
+                            "regionPath": "/310000/310101",
+                            "province": "310000",
+                            "city": "",
+                            "county": "310101"
+                        },
+                        "householdLocation": {
+                            "regionId": "310104",
+                            "country": "CHN",
+                            "regionPath": "/310000/310104",
+                            "province": "310000",
+                            "city": "",
+                            "county": "310104"
+                        },
+                        "advantage": "自我很高的评价啊12",
+                        "initialJobDate": "2015-10-15T16:00:00.000+0000"
+                    },
+                    "isOpened": true,
+                    "isPerfect": true,
+                    "createdUserId": "2ca4cd3089aa6b8c0189aaa6c68c0025",
+                    "createdTime": "2023-07-31T08:17:28.443+0000",
+                    "updatedTime": "2023-08-02T06:19:12.759+0000",
+                    "jobHistories": [
+                        {
+                            "jobHistoryId": "2ca4cd3089aa6b8c0189aab652c60037",
+                            "companyName": "华博教育",
+                            "departmentName": "大前端",
+                            "positionHeld": "程序员",
+                            "positionType": {
+                                "firstLevel": "jobtype5bc468fe501809dc4d1010000",
+                                "secondLevel": "jobtype5bc468fe501809dc4d1000030",
+                                "thirdLevel": "jobtype5bc468fe501809dc4d4100140",
+                                "path": "/jobtype5bc468fe501809dc4d1010000/jobtype5bc468fe501809dc4d1000030/jobtype5bc468fe501809dc4d4100140"
+                            },
+                            "startDate": "2021-06-30T16:00:00.000+0000",
+                            "endDate": "2023-07-30T16:00:00.000+0000",
+                            "jobContent": "写代码"
+                        },
+                        {
+                            "jobHistoryId": "2ca4817789aeb1140189aeb484a20009",
+                            "companyName": "华博教育2",
+                            "departmentName": "大前端2",
+                            "positionHeld": "打工人",
+                            "positionType": {
+                                "firstLevel": "jobtype5bc468fe501809dc4d1010000",
+                                "secondLevel": "jobtype5bc468fe501809dc4d1000030",
+                                "thirdLevel": "jobtype5bc468fe501809dc4d4100140",
+                                "path": "/jobtype5bc468fe501809dc4d1010000/jobtype5bc468fe501809dc4d1000030/jobtype5bc468fe501809dc4d4100140"
+                            },
+                            "startDate": "2023-07-11T16:00:00.000+0000",
+                            "endDate": "2023-07-31T16:00:00.000+0000",
+                            "jobContent": "工作内容"
+                        },
+                        {
+                            "jobHistoryId": "4028997589b0d8c00189b0e7047e0008",
+                            "companyName": "华博教育-1",
+                            "departmentName": "大前端",
+                            "positionHeld": "打工人啊",
+                            "positionType": {
+                                "firstLevel": "jobtype5bc468fe501809dc4d1010000",
+                                "secondLevel": "jobtype5bc468fe501809dc4d1000030",
+                                "thirdLevel": "jobtype5bc468fe501809dc4d4100140",
+                                "path": "/jobtype5bc468fe501809dc4d1010000/jobtype5bc468fe501809dc4d1000030/jobtype5bc468fe501809dc4d4100140"
+                            },
+                            "startDate": "2023-05-16T16:00:00.000+0000",
+                            "endDate": "2023-08-21T16:00:00.000+0000",
+                            "jobContent": "123"
+                        }
+                    ],
+                    "educationHistories": [
+                        {
+                            "educationHistoryId": "40288c7589aab69b0189aab69be90000",
+                            "schoolName": "腾盛自动化工程公司",
+                            "education": "educationBackground09dc4d43e0008",
+                            "profession": "嘻嘻哈哈",
+                            "startDate": "2023-06-30T16:00:00.000+0000",
+                            "endDate": "2023-07-30T16:00:00.000+0000",
+                            "isUnifiedRecruitment": true,
+                            "isOverseaEducation": true
+                        }
+                    ],
+                    "highestEducationHistory": {
+                        "educationHistoryId": "40288c7589aab69b0189aab69be90000",
+                        "schoolName": "福州大学",
+                        "education": "educationBackground09dc4d43e0008",
+                        "profession": "软件工程",
+                        "startDate": "2023-06-30T16:00:00.000+0000",
+                        "endDate": "2023-07-30T16:00:00.000+0000",
+                        "isUnifiedRecruitment": true,
+                        "isOverseaEducation": true
+                    },
+                    "projectHistories": [
+                        {
+                            "projectHistoryId": "2ca4cd3089aa6b8c0189aab6fa220038",
+                            "projectName": "智慧就业",
+                            "projectRole": "前端开发工程师",
+                            "startDate": "2023-06-30T16:00:00.000+0000",
+                            "endDate": "2023-07-30T16:00:00.000+0000",
+                            "jobContent": "工作内容啊"
+                        }
+                    ],
+                    "skillTags": [
+                        {
+                            "skillTagId": "2ca4cd3089aa6b8c0189aac188670040",
+                            "skillTagName": "TS",
+                            "usageTime": 12,
+                            "masteryLevel": 4
+                        }
+                    ],
+                    "fileResumes": [
+                        {
+                            "fileResumeId": "40288c7589ab02bf0189ab02bf1c0000",
+                            "name": "附件2：团建活动行程.pdf",
+                            "path": "/ms-obsfile/protected/hwobs/zhjypte51bc611eeac39801844e39911/zhjypte51bc611eeac3980SubProject/2023/07/31/2ca4ed2589aa021b0189ab02bc4d002f.pdf",
+                            "createdUserId": "2ca4cd3089aa6b8c0189aaa6c68c0025",
+                            "createdTime": "2023-07-31T08:13:51.260+0000",
+                            "updatedTime": "2023-07-31T08:13:51.260+0000"
+                        },
+                        {
+                            "fileResumeId": "2ca4f0b889aafa6b0189ab05845e0013",
+                            "name": "华博股份司字（2023）6号关于下发《考勤管理办法（修订）》的通知.pdf",
+                            "path": "/ms-obsfile/protected/hwobs/zhjypte51bc611eeac39801844e39911/zhjypte51bc611eeac3980SubProject/2023/07/31/2ca4ed2589aa021b0189ab0573ef0030.pdf",
+                            "createdUserId": "2ca4cd3089aa6b8c0189aaa6c68c0025",
+                            "createdTime": "2023-07-31T08:16:52.830+0000",
+                            "updatedTime": "2023-07-31T08:16:52.830+0000"
+                        },
+                        {
+                            "fileResumeId": "40289a7a89ab060f0189ab060f7b0000",
+                            "name": "8.0事业单位公开考试报名平台V2.0-蓝湖.pdf",
+                            "path": "/ms-obsfile/protected/hwobs/zhjypte51bc611eeac39801844e39911/zhjypte51bc611eeac3980SubProject/2023/07/31/2ca4ed2589aa021b0189ab0614380031.pdf",
+                            "createdUserId": "2ca4cd3089aa6b8c0189aaa6c68c0025",
+                            "createdTime": "2023-07-31T08:17:28.443+0000",
+                            "updatedTime": "2023-07-31T08:17:28.443+0000"
+                        }
+                    ],
+                    "resumeRedundancy": {
+                        "queryRedundancyInfo": {
+                            "communicatedRecruiterUserIdList": [
+                                "2ca4ed2489a9ca510189aa0993490148"
+                            ],
+                            "iBlockedUnitIdList": [
+                                "2ca4cd3089aa6b8c0189aaa986df002a"
+                            ],
+                            "viewedMeRecruiterUserIdList": [
+                                "2ca4ed2489a9ca510189aa0993490148",
+                                "2ca4ed2889b3ccd10189b3e269a40012",
+                                "2ca4cd3089aa6b8c0189aa6b8fea000b",
+                                "2ca48c3c89be77580189be77582f0000",
+                                "2ca4ef7f89be99220189be99270d000b",
+                                "2ca4ed0489ce1bd30189ce1efd400014",
+                                "2ca4817b89cfbd870189cfbd8be4000b"
+                            ]
+                        },
+                        "employingInPlatformUnit": 0,
+                        "everEmployInPlatformUnit": 0,
+                        "lastSocialSecurityPaymentInfo": {
+                            "paymentStatus": 0
+                        }
+                    },
+                    "desiredPositions": [
+                        {
+                            "desiredPositionId": "4028997389afad810189afce64e50003",
+                            "desiredPositionType": {
+                                "firstLevel": "jobtype5bc468fe501809dc4d1010000",
+                                "secondLevel": "jobtype5bc468fe501809dc4d1000070",
+                                "thirdLevel": "jobtype5bc468fe501809dc4d4100700",
+                                "path": "/jobtype5bc468fe501809dc4d1010000/jobtype5bc468fe501809dc4d1000070/jobtype5bc468fe501809dc4d4100700"
+                            },
+                            "jobCity": {
+                                "regionId": "140721",
+                                "country": "CHN",
+                                "regionPath": "/140000/140700/140721",
+                                "province": "140000",
+                                "city": "140700",
+                                "county": "140721"
+                            },
+                            "salary": {
+                                "min": 22,
+                                "max": 40
+                            },
+                            "companySize": "enterprisesize03570edf504ef69103",
+                            "companyIndustry": {
+                                "industry": "industrytype5bc46fe09dc4d4100000",
+                                "industryIdPath": "/industrytype5bc46fe09dc4d4100000",
+                                "firstLevelIndustryId": "industrytype5bc46fe09dc4d4100000",
+                                "secondLevelIndustryId": "",
+                                "thirdLevelIndustryId": "",
+                                "fourthLevelIndustryId": ""
+                            }
+                        }
+                    ],
+                    "trainingHistories": [
+                        {
+                            "trainingHistoryId": "2ca4f0b889aafa6b0189ab0b75570016",
+                            "trainingName": "培训写TS",
+                            "startDate": "2023-07-23T16:00:00.000+0000",
+                            "endDate": "2023-07-30T16:00:00.000+0000",
+                            "trainingContent": "写TS"
+                        }
+                    ],
+                    "languages": [
+                        {
+                            "languageAbilityId": "2ca4f0b889aafa6b0189ab0c84ca0019",
+                            "languageType": "language0c37cb3fee3cdafd43efe002",
+                            "listeningAndSpeakingAbility": 2,
+                            "readingAndWritingAbility": 1
+                        }
+                    ],
+                    "certificates": [
+                        {
+                            "certificateId": "2ca4f0b889aafa6b0189ab0c26280018",
+                            "certificateName": "TS证书",
+                            "givenDate": "2023-07-30T16:00:00.000+0000"
+                        }
+                    ],
+                    "recordIsDeleted": false,
+                    "openedStatusTimeChange": {
+                        "true": "2023-08-02T03:30:44.318+0000"
+                    },
+                    "lastGraduatedEducationHistory": {
+                        "educationHistoryId": "40288c7589aab69b0189aab69be90000",
+                        "schoolName": "福州大学",
+                        "education": "educationBackground09dc4d43e0008",
+                        "profession": "软件工程",
+                        "startDate": "2023-06-30T16:00:00.000+0000",
+                        "endDate": "2023-07-30T16:00:00.000+0000",
+                        "isUnifiedRecruitment": true,
+                        "isOverseaEducation": true
+                    }
+                }
+            },
+            {
+                "_index": "sjj-resume-test-1",
+                "_type": "_doc",
+                "_id": "t0e0Do8BT1vxFVcbKUYp",
+                "_score": 65,
+                "_source": {
+                    "recordCreatedTime": "2023-08-02T01:22:07.736+0000",
+                    "recordUpdatedTime": "2024-04-02T14:08:48.196+0000",
+                    "ownerInfo": {
+                        "platformId": "zhjypte51bc611eeac39801844e39900",
+                        "platformVersionId": "zhjypte51bc611eeac39801844e39911",
+                        "projectId": "zhjypte51bc611eeac3980184Project",
+                        "subProjectId": "zhjypte51bc611eeac3980SubProject",
+                        "unitId": "-1",
+                        "servicerId": "-1"
+                    },
+                    "seekerUserInfo": {
+                        "seekerUserId": "2ca4aaa289aefb1c0189af1b9e090002",
+                        "personId": "2ca4aaa289aefb1c0189af1b9e210003",
+                        "idCardType": 1,
+                        "idCard": "350322199409013516",
+                        "workplaceRole": 2,
+                        "graduatedSchool": "福州大学",
+                        "graduatedDate": "2019-07-31T16:00:00.000+0000",
+                        "jobStatus": "jobseekingstatus570edf504ef69101",
+                        "jobStartDate": "jobentrytimecpdd0edf5041wef69103",
+                        "address": {
+                            "regionId": "350102",
+                            "country": "CHN",
+                            "regionPath": "/350000/350100/350102",
+                            "province": "350000",
+                            "city": "350100",
+                            "county": "350102"
+                        },
+                        "householdLocation": {
+                            "regionId": "350102",
+                            "country": "CHN",
+                            "regionPath": "/350000/350100/350102",
+                            "province": "350000",
+                            "city": "350100",
+                            "county": "350102"
+                        },
+                        "advantage": "分公司个大大手动阀手动阀手动阀",
+                        "initialJobDate": "2019-07-31T16:00:00.000+0000",
+                        "seekerUserBirthday": "1994-08-31T16:00:00.000+0000",
+                        "seekerUserGender": 1
+                    },
+                    "isOpened": false,
+                    "isPerfect": true,
+                    "createdUserId": "2ca4aaa289aefb1c0189af1b9e090002",
+                    "createdTime": "2023-08-02T01:22:06.863+0000",
+                    "updatedTime": "2024-03-25T03:28:14.851+0000",
+                    "recordIsDeleted": false,
+                    "jobHistories": [
+                        {
+                            "jobHistoryId": "2ca4ed2889b3ccd10189b3d8dd100003",
+                            "companyName": "华博公司",
+                            "departmentName": "大前端",
+                            "positionHeld": "前端开发工程师",
+                            "positionType": {
+                                "firstLevel": "jobtype5bc468fe501809dc4d1010000",
+                                "secondLevel": "jobtype5bc468fe501809dc4d1000030",
+                                "thirdLevel": "jobtype5bc468fe501809dc4d4100140",
+                                "path": "/jobtype5bc468fe501809dc4d1010000/jobtype5bc468fe501809dc4d1000030/jobtype5bc468fe501809dc4d4100140",
+                                "positionType": "jobtype5bc468fe501809dc4d4100140"
+                            },
+                            "startDate": "2021-04-15T16:00:00.000+0000",
+                            "endDate": "2998-12-31T16:00:00.000+0000",
+                            "jobContent": "防风固沙发发发生发的发"
+                        }
+                    ],
+                    "educationHistories": [
+                        {
+                            "educationHistoryId": "4028997589b0d8c00189b3d9c9c70027",
+                            "schoolName": "福州大学",
+                            "education": "educationBackground09dc4d43e0006",
+                            "profession": "计算机网络技术",
+                            "startDate": "2016-08-31T16:00:00.000+0000",
+                            "endDate": "2020-08-31T16:00:00.000+0000",
+                            "isUnifiedRecruitment": false,
+                            "isOverseaEducation": false
+                        }
+                    ],
+                    "projectHistories": [
+                        {
+                            "projectHistoryId": "4028997389b3d49d0189b3dba9380003",
+                            "projectName": "智慧就业",
+                            "projectRole": "前端开发",
+                            "startDate": "2023-06-30T16:00:00.000+0000",
+                            "endDate": "2998-12-31T16:00:00.000+0000",
+                            "jobContent": "东莞市东莞丰盛的归属感风格"
+                        }
+                    ],
+                    "highestEducationHistory": {
+                        "educationHistoryId": "4028997589b0d8c00189b3d9c9c70027",
+                        "schoolName": "福州大学",
+                        "education": "educationBackground09dc4d43e0006",
+                        "profession": "计算机网络技术",
+                        "startDate": "2016-08-31T16:00:00.000+0000",
+                        "endDate": "2020-08-31T16:00:00.000+0000",
+                        "isUnifiedRecruitment": false,
+                        "isOverseaEducation": false
+                    },
+                    "desiredPositions": [
+                        {
+                            "desiredPositionId": "2ca4ed0689b571260189b58751740010",
+                            "desiredPositionType": {
+                                "firstLevel": "jobtype5bc468fe501809dc4d1010000",
+                                "secondLevel": "jobtype5bc468fe501809dc4d1000030",
+                                "thirdLevel": "jobtype5bc468fe501809dc4d4100140",
+                                "path": "/jobtype5bc468fe501809dc4d1010000/jobtype5bc468fe501809dc4d1000030/jobtype5bc468fe501809dc4d4100140"
+                            },
+                            "jobCity": {
+                                "regionId": "350102",
+                                "country": "CHN",
+                                "regionPath": "/350000/350100/350102",
+                                "province": "350000",
+                                "city": "350100",
+                                "county": "350102"
+                            },
+                            "salary": {
+                                "min": 8000,
+                                "max": 12000
+                            },
+                            "companySize": "",
+                            "companyIndustry": {}
+                        }
+                    ],
+                    "trainingHistories": [
+                        {
+                            "trainingHistoryId": "4028997589b0d8c00189b3f085f40028",
+                            "trainingName": "Java工程师",
+                            "startDate": "2019-07-31T16:00:00.000+0000",
+                            "endDate": "2021-06-30T16:00:00.000+0000",
+                            "trainingContent": "法撒旦法师法师打发第三方"
+                        }
+                    ],
+                    "languages": [
+                        {
+                            "languageAbilityId": "2ca4ed2e89b3ebe10189b3f0beff0005",
+                            "languageType": "language0c37cb3fee3cdafd43efe000",
+                            "listeningAndSpeakingAbility": 2,
+                            "readingAndWritingAbility": 2
+                        },
+                        {
+                            "languageAbilityId": "4028997589b0d8c00189b3f0d9790029",
+                            "languageType": "language0c37cb3fee3cdafd43efe002",
+                            "listeningAndSpeakingAbility": 3,
+                            "readingAndWritingAbility": 3
+                        }
+                    ],
+                    "certificates": [
+                        {
+                            "certificateId": "2ca4ed2e89b3ebe10189b3f10fed0006",
+                            "certificateName": "Java工程师",
+                            "givenDate": "2021-07-31T16:00:00.000+0000"
+                        }
+                    ],
+                    "skillTags": [
+                        {
+                            "skillTagId": "4028997589b0d8c00189b3f15eea002a",
+                            "skillTagName": "摸鱼打游戏",
+                            "usageTime": 5,
+                            "masteryLevel": 4
+                        }
+                    ],
+                    "openedStatusTimeChange": {
+                        "true": "2023-08-02T09:17:59.505+0000",
+                        "false": "2024-03-25T02:09:39.067+0000"
+                    },
+                    "resumeRedundancy": {
+                        "queryRedundancyInfo": {
+                            "viewedMeRecruiterUserIdList": [
+                                "2ca4ed2489a9ca510189aa0993490148",
+                                "2ca4ed2889b3ccd10189b3e269a40012",
+                                "2ca4cd3089aa6b8c0189aa6b8fea000b",
+                                "2ca48c3c89be77580189be77582f0000",
+                                "2ca4ef7f89be99220189be99270d000b",
+                                "2ca4ed0489ce1bd30189ce1efd400014",
+                                "2ca4817b89cfbd870189cfbd8be4000b"
+                            ],
+                            "communicatedRecruiterUserIdList": [
+                                "2ca4ed2489a9ca510189aa0993490148"
+                            ]
+                        },
+                        "employingInPlatformUnit": 0,
+                        "everEmployInPlatformUnit": 0,
+                        "lastSocialSecurityPaymentInfo": {
+                            "paymentStatus": 0
+                        }
+                    },
+                    "lastGraduatedEducationHistory": {
+                        "educationHistoryId": "4028997589b0d8c00189b3d9c9c70027",
+                        "schoolName": "福州大学",
+                        "education": "educationBackground09dc4d43e0006",
+                        "profession": "计算机网络技术",
+                        "startDate": "2016-08-31T16:00:00.000+0000",
+                        "endDate": "2020-08-31T16:00:00.000+0000",
+                        "isUnifiedRecruitment": false,
+                        "isOverseaEducation": false
+                    }
+                }
+            }
+        ]
+    }
+}
