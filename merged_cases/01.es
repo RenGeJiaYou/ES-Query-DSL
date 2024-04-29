@@ -28,7 +28,7 @@ POST /sjj-resume-test-1/_search
               }               
             ],
             "should": [
-            {
+              {
                 // 原型需求2/8: 求职者期望工作的城市与当前职位相符；
                 "match" :{
                   "desiredPositions.jobCity.city": {
@@ -37,7 +37,49 @@ POST /sjj-resume-test-1/_search
                   }
                 }
               },
+			  {
+                    // 原型需求4/8 ：不得存在工作经验，即仅校招/应届
+					"bool": {
+						"must_not": [
+                            {
+                                "exists": {
+                                    "field":"seekerUserInfo.initialJobDate"
+                                    }
+                            }
+                        ]
+					}
+			  },
+              {
+                    // 原型需求4/8 ：拥有工作经验，一年以内
+					"range": {
+						"seekerUserInfo.initialJobDate": {
+                            "gte": "now-1y/d",
+                            "lte":  "now/d",
+                            "boost": 5
 
+                        }
+					}
+			  },
+			  {
+                    // 原型需求4/8 ：拥有工作经验，一年到三年
+					"range": {
+						"seekerUserInfo.initialJobDate": {
+                            "gte": "now-3y/d",
+                            "lte":  "now-1y/d",
+                            "boost": 8
+                        }
+					}
+			  },
+			  {
+                    // 原型需求4/8 ：拥有工作经验，三年到五年
+					"range": {
+						"seekerUserInfo.initialJobDate": {
+                            "gte": "now-5y/d",
+                            "lte":  "now-3y/d",
+                            "boost": 10
+                        }
+					}
+			  },
               {
                 // 原型需求6/8：求职者 期望行业 与当前职位对应公司的行业相符
                 "match" :{
