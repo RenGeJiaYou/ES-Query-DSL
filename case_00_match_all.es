@@ -7,9 +7,9 @@
  *
  * 作者：sjj
  */
-GET /sjj-resume-test-1/_search
+GET /sjj-resume-test-2/_search
 {
-	"query": {
-		"match_all": {}
-	}
+    "query": {
+        "match_all": {}
+    }
 }

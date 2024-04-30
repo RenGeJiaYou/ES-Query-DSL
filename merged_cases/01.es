@@ -1,6 +1,11 @@
-POST /sjj-resume-test-1/_search
+
+POST /sjj-resume-test-2/_search
 {
-    "sort": {},
+    "_source": ["desiredPositions.desiredPositionType",
+                "highestEducationHistory.education",
+                "esiredPositions.jobCity",
+                "seekerUserInfo",
+                "desiredPositions.salary"],
     "query": {
         "bool": {
             "must": [
@@ -25,7 +30,19 @@ POST /sjj-resume-test-1/_search
                            "educationBackground09dc4d43e0008"
                        ]
                   }
-              }               
+              },
+              {
+          // 原型需求5/8：level 1：筛选出填写了薪资信息的简历（去除将返回缺失该信息的所有简历）
+					"exists": {
+						"field": "desiredPositions.salary.min"
+					}
+			  },
+			  {
+          // 原型需求5/8：level 1：筛选出填写了薪资信息的简历（去除将返回缺失该信息的所有简历）
+					"exists": {
+						"field": "desiredPositions.salary.max"
+					}
+		      }               
             ],
             "should": [
               {
@@ -80,6 +97,48 @@ POST /sjj-resume-test-1/_search
                         }
 					}
 			  },
+                            {
+                "bool": {
+            "must": [
+              {
+                // 原型需求5/8 level2（高优先级）：求职者期望顶薪 ≤ 当前职位顶薪
+                "range": {
+                  "desiredPositions.salary.max": {
+                    "lte": 10000, // 此处应该是当前职位的顶薪
+                    "boost": 6
+                  }
+                }
+              },
+              {
+                // 原型需求5/8 level2（高优先级）：求职者期望底薪 ≥ 当前职位底薪
+                "range": {
+                  "desiredPositions.salary.min": {
+                    "gte": 6000,  //此处应该是当前职位的底薪
+                    "boost": 6
+                  }
+                }
+              }
+            ]
+          }
+        },
+				{
+          // 原型需求5/8 level2（低优先级）：求职者期望顶薪 > 当前职位顶薪
+					"range": {
+						"desiredPositions.salary.max": {
+							"gt": 10000,  // 此处应该是当前职位的顶薪
+							"boost": 3
+						}
+					}
+				},
+				{
+          // 原型需求5/8 level2（低优先级）：求职者期望底薪 < 当前职位底薪
+					"range": {
+						"desiredPositions.salary.min": {
+							"lt": 6000, // 此处应该是当前职位的底薪
+							"boost": 3
+						}
+					}
+				},
               {
                 // 原型需求6/8：求职者 期望行业 与当前职位对应公司的行业相符
                 "match" :{
@@ -89,6 +148,7 @@ POST /sjj-resume-test-1/_search
                     }
                 }
               }
+
               /**
                * ========================================
                * ↓以下都是非原型需求，但有必要添加的搜索条件↓
@@ -122,7 +182,40 @@ POST /sjj-resume-test-1/_search
             //     }
             //   }
             ],
-            "must_not": []
+            "must_not": [
+                {
+                    // 原型需求5/6：level 1：简历中的底薪 不得大于 当前岗位顶薪
+					"range": {
+						"desiredPositions.salary.min": {
+							"gt": 10000
+						}
+					}
+				},
+                {
+                    // 原型需求7/8：要求设置为开放的简历才会被推荐
+					"term": {
+						"isOpened": false
+					}
+				},
+                {
+                    // 原型需求8/8: 测试是否匹配求职者屏蔽公司字段
+					"term": {
+						 "resumeRedundancy.queryRedundancyInfo.iBlockedUnitIdList":""
+					}
+				},
+				{
+                    // 原型需求8/8: 测试是否匹配招聘者屏蔽求职者字段
+					"term": {
+						"resumeRedundancy.queryRedundancyInfo.blockedMeRecruiterUserIdList":"2ca4ed2489a9ca510189aa0993490148"
+					}
+				},
+                {
+                    // 原型需求8/8: 测试是否匹配屏蔽求职者字段
+					"term": {
+						"resumeRedundancy.queryRedundancyInfo.blockedMeUnitIdList":""
+					}
+                }
+            ]
         }
     },
     "aggs": {},

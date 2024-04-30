@@ -9,6 +9,7 @@
  */
 POST /sjj-resume-test-1/_search
 {
+  "_source":["desiredPositions.salary"],
 	"query": {
 		"bool": {
 			"must": [
