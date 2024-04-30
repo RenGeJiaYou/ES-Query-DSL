@@ -1,12 +1,12 @@
 POST /sjj-resume-test-2/_search
 {
-	"_source": [
-		"desiredPositions.desiredPositionType",
-		"highestEducationHistory.education",
-		"esiredPositions.jobCity",
-		"seekerUserInfo",
-		"desiredPositions.salary"
-	],
+	// "_source": [
+	// 	"desiredPositions.desiredPositionType",
+	// 	"highestEducationHistory.education",
+	// 	"esiredPositions.jobCity",
+	// 	"seekerUserInfo",
+	// 	"desiredPositions.salary"
+	// ],
 	"query": {
 		"bool": {
 			"must": [
@@ -27,7 +27,7 @@ POST /sjj-resume-test-2/_search
                         // 后续在 Java 中维护一个 String 常量数组，用于存储学历的 ID，输入 i,返回数组 [i]~[n-1] 左闭右闭
 						"highestEducationHistory.education.keyword": [
 							"educationBackground09dc4d43e0005",
-							" educationBackground09dc4d43e0006",
+							"educationBackground09dc4d43e0006",
 							"educationBackground09dc4d43e0008"
 						]
 					}
