@@ -11,7 +11,7 @@
  * 总体来说符合需求
  * 作者：sjj
  */
-POST /sjj-resume-test-1/_search
+POST /sjj-resume-test-2/_search
 {
   "_source":["desiredPositions.salary"],
 	"query": {
@@ -48,7 +48,7 @@ POST /sjj-resume-test-1/_search
                 "range": {
                   "desiredPositions.salary.max": {
                     "lte": 10000, // 此处应该是当前职位的顶薪
-                    "boost": 60
+                    "boost": 6
                   }
                 }
               },
@@ -57,7 +57,7 @@ POST /sjj-resume-test-1/_search
                 "range": {
                   "desiredPositions.salary.min": {
                     "gte": 6000,  //此处应该是当前职位的底薪
-                    "boost": 60
+                    "boost": 6
                   }
                 }
               }
@@ -72,16 +72,16 @@ POST /sjj-resume-test-1/_search
 							"boost": 3
 						}
 					}
-				},
-				{
-          // 原型需求5/6 level2（低优先级）：求职者期望底薪 < 当前职位底薪
-					"range": {
-						"desiredPositions.salary.min": {
-							"lt": 6000, // 此处应该是当前职位的底薪
-							"boost": 3
-						}
-					}
 				}
+				// {
+        //   // 原型需求5/6 level2（低优先级）：求职者期望底薪 < 当前职位底薪
+				// 	"range": {
+				// 		"desiredPositions.salary.min": {
+				// 			"lt": 6000, // 此处应该是当前职位的底薪
+				// 			"boost": 3
+				// 		}
+				// 	}
+				// }
             //,
             //   {
             //     "match":{
