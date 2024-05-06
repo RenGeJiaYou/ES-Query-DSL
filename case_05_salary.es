@@ -14,6 +14,11 @@
 POST /sjj-resume-test-2/_search
 {
   "_source":["desiredPositions.salary"],
+  // "sort": [
+  //   {
+  //     "desiredPositions.salary.min":"asc"
+  //   }
+  // ],
 	"query": {
 		"bool": {
 			"must": [
@@ -55,7 +60,7 @@ POST /sjj-resume-test-2/_search
             ]
           }
         },
-                {
+        {
           "bool": {
             "must": [
               {
