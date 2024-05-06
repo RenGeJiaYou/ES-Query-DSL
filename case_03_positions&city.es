@@ -8,66 +8,41 @@
  */
 POST /sjj-resume-test-2/_search
 {
-    "_source": [
-        
-    ],
-    "query": {
-        "bool": {
-            "must": [
-                {
-                    "bool": {
-                        "should": [
-                            {
-                                "term": {
-                                    "desiredPositions.desiredPositionType.firstLevel.keyword": "jobtype5bc468fe501809dc4d1000000"
-                                }
-                            },
-                            {
-                                "match": {
-                                    "jobHistories.firstLevel": "jobtype5bc468fe501809dc4d1000000"
-                                }
-                            }
-                        ]
-                    }
-                }
-            ],
+  "_source": [
+    "desiredPositions.jobCity.city"
+  ],
+  "query": {
+    "bool": {
+      "must": [
+        {
+          "bool": {
             "should": [
-                {
-                    "match": {
-                        "desiredPositions.desiredPositionId": {
-                            "query": "2ca4cd0e8e181243018e1b977fff0034",
-                            "boost": 2
-                        }
-                    }
-                },
-                {
-                    "match": {
-                        "desiredPositions.jobCity.city": {
-                            "query": "350100",
-                            "boost": 2
-                        }
-                    }
-                },
-                {
-                    "match": {
-                        "highestEducationHistory.profession": {
-                            "query": "计算机 软件",
-                            "analyzer": "whitespace",
-                            "boost": 5
-                        }
-                    }
-                },
-                {
-                    "match": {
-                        "certificates.certificateName": {
-                            "query": "英语四级",
-                            "boost": 1
-                        }
-                    }
+              {
+                "term": {
+                  "desiredPositions.desiredPositionType.firstLevel.keyword": "jobtype5bc468fe501809dc4d1000000"
                 }
-            ],
-            "must_not": []
+              },
+              {
+                "match": {
+                  "jobHistories.firstLevel": "jobtype5bc468fe501809dc4d1000000"
+                }
+              }
+            ]
+          }
         }
-    },
-    "explain": false
+      ],
+      "should": [
+        {
+          "match": {
+            "desiredPositions.jobCity.city": {
+              "query": "350100",
+              "boost": 2
+            }
+          }
+        }
+      ],
+      "must_not": []
+    }
+  },
+  "explain": false
 }
