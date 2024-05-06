@@ -29,15 +29,6 @@ POST /sjj-resume-test-2/_search
 						"field": "desiredPositions.salary.max"
 					}
 				}
-              /*{
-                // 原型需求1/6:求职者填写意向职位与当前职位（类型）的一级类型相符；
-                "match" :{
-                  "desiredPositions.desiredPositionType.firstLevel": {
-                    "query":"jobtype5bc468fe501809dc4d1000000",
-                    "boost":20
-                  }
-                }
-              },*/
 			],
 			"should": [
         {
@@ -64,67 +55,30 @@ POST /sjj-resume-test-2/_search
             ]
           }
         },
-				{
-          // 原型需求5/6 level2（低优先级）：求职者期望顶薪 > 当前职位顶薪
-					"range": {
-						"desiredPositions.salary.max": {
-							"gt": 10000,  // 此处应该是当前职位的顶薪
-							"boost": 3
-						}
-					}
-				}
-				// {
-        //   // 原型需求5/6 level2（低优先级）：求职者期望底薪 < 当前职位底薪
-				// 	"range": {
-				// 		"desiredPositions.salary.min": {
-				// 			"lt": 6000, // 此处应该是当前职位的底薪
-				// 			"boost": 3
-				// 		}
-				// 	}
-				// }
-            //,
-            //   {
-            //     "match":{
-            //       "desiredPositions.desiredPositionId":{
-            //         "query":"2ca4cd0e8e181243018e1b977fff0034",
-            //         "boost":10
-            //       }
-            //     }
-            //   },
-            // {
-            //     // 原型需求2/6: 求职者期望工作的城市与当前职位相符；
-            //     "match" :{
-            //       "desiredPositions.jobCity.city": {
-            //         "query":"350100",
-            //         "boost":8
-            //       }
-            //     }
-            //   },
-            //   {
-            //     "match" :{
-            //       "highestEducationHistory.profession": {
-            //         "query":"计算机 软件",
-            //         "boost":8
-            //       }
-            //     }
-            //   },
-            //   {
-            //     // 原型需求6/6：求职者 期望行业 与当前职位对应公司的行业相符
-            //     "match" :{
-            //       "desiredPositions.companyIndustry.industry": {
-            //         "query":"industrytype5bc46fe09dc4d4100004", 
-            //         "boost":4
-            //         }
-            //     }
-            //   },
-            //  {
-            //     "match" :{
-            //       "certificates.certificateName": {
-            //         "query":"英语四级",
-            //         "boost":2
-            //       }
-            //     }
-            //   }
+                {
+          "bool": {
+            "must": [
+              {
+                // 原型需求5/6 level2（低优先级）：求职者期望顶薪 ＞ 当前职位顶薪
+                "range": {
+                  "desiredPositions.salary.max": {
+                    "gt": 10000, // 此处应该是当前职位的顶薪
+                    "boost": 3
+                  }
+                }
+              },
+              {
+                // 原型需求5/6 level2（低优先级）：求职者期望底薪 ≥ 当前职位底薪
+                "range": {
+                  "desiredPositions.salary.min": {
+                    "gte": 6000,  //此处应该是当前职位的底薪
+                    "boost": 3
+                  }
+                }
+              }
+            ]
+          }
+        }
 			],
 			"must_not": [
 				{
