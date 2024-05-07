@@ -178,8 +178,9 @@ case 7-3: 一个同时包括「在校/应届」和其他经验的测试用例
 /**
  * case 7-1: 仅包括「在校/应届」
  */
-POST /sjj-resume-test-1/_search
+POST /sjj-resume-test-2/_search
 {
+    "_source":["seekerUserInfo"],
     "query": {
         "bool": {
             "must": [
@@ -204,8 +205,9 @@ POST /sjj-resume-test-1/_search
 /**
  * case 7-2: 不包括「在校/应届」
  */
-POST /sjj-resume-test-1/_search
+POST /sjj-resume-test-2/_search
 {
+    "_source":["seekerUserInfo"],
     "query": {
         "bool": {
             "must": [
@@ -228,59 +230,128 @@ POST /sjj-resume-test-1/_search
 }
 
 /**
- * case 7-3: 同时包括「在校/应届」和一年以内、一年到三年、三年到五年
+ * case 7-3: 【寻求初、中级别】同时包括「在校/应届」和一年以内、一年到三年、三年到五年
+ * 注意左闭右开
  */
-POST /sjj-resume-test-1/_search
+POST /sjj-resume-test-2/_search
 {
-    "_source": ["seekerUserInfo.initialJobDate"],
-	"query": {
-		"bool": {
-			"should": [
-				{
-                    // 原型需求4/6 ：不得存在工作经验，即仅校招/应届
-					"bool": {
-						"must_not": [
-                            {
-                                "exists": {
-                                    "field":"seekerUserInfo.initialJobDate"
-                                    }
-                            }
-                        ]
-					}
-				},
-                {
-                    // 一年以内
-					"range": {
-						"seekerUserInfo.initialJobDate": {
-                            "gte": "now-1y/d",
-                            "lte":  "now/d",
-                            "boost": 5
+  "_source": [
+    "seekerUserInfo.initialJobDate"
+  ],
+  "query": {
+    "bool": {
+      "should": [
+        {
+          "bool": {
+            "must_not": [
+              {
+                "exists": {
+                  "field": "seekerUserInfo.initialJobDate"
+                }
+              }
+            ]
+          }
+        },
+        // 一年内
+        {
+          "range": {
+            "seekerUserInfo.initialJobDate": {
+              "gte": "now-1y",
+              "lt": "now"
+            }
+          }
+        },
+        // 一到三年
+        {
+          "range": {
+            "seekerUserInfo.initialJobDate": {
+              "gte": "now-3y/d",
+              "lt": "now-1y/d",
+              "boost": 3
+            }
+          }
+        },
+        // 三到五年
+        {
+          "range": {
+            "seekerUserInfo.initialJobDate": {
+              "gte": "now-5y/d",
+              "lt": "now-3y/d",
+              "boost": 2
+            }
+          }
+        }
+      ],
+      "must_not": []
+    }
+  },
+  "explain": true
+}
 
-                        }
-					}
-				},
-				{
-                    // 一年到三年
-					"range": {
-						"seekerUserInfo.initialJobDate": {
-                            "gte": "now-3y/d",
-                            "lte":  "now-1y/d",
-                            "boost": 8
-                        }
-					}
-				},
-				{
-                    // 三年到五年
-					"range": {
-						"seekerUserInfo.initialJobDate": {
-                            "gte": "now-5y/d",
-                            "lte":  "now-3y/d",
-                            "boost": 10
-                        }
-					}
-				}
-			],
-			"must_not": []
-		}
-	}
+/**
+ * case 7-4: 【寻求资深级别】不包括「在校/应届」，优先级为五年以上、三年到五年、一年到三年、一年以内
+ * 注意左闭右开
+ * 注意不匹配的内容也不要扔掉，放在后面好了
+ */
+POST /sjj-resume-test-2/_search
+{
+  "_source": [
+    "seekerUserInfo.initialJobDate"
+  ],
+  "query": {
+    "bool": {
+      "must": [],
+      "should": [
+        {
+          "bool": {
+            "must_not": [
+              {
+                "exists": {
+                  "field": "seekerUserInfo.initialJobDate"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "range": {
+            "seekerUserInfo.initialJobDate": {
+              "gte": "now-1y",
+              "lt": "now",
+              "boost": 2
+            }
+          }
+        },
+        {
+          "range": {
+            "seekerUserInfo.initialJobDate": {
+              "gte": "now-3y/d",
+              "lt": "now-1y/d",
+              "boost": 3
+            }
+          }
+        },
+        {
+          "range": {
+            "seekerUserInfo.initialJobDate": {
+              "gte": "now-5y/d",
+              "lt": "now-3y/d",
+              "boost": 4
+            }
+          }
+        },
+        {
+          "range": {
+            "seekerUserInfo.initialJobDate": {
+              "lt": "now-5y/d",
+              "boost": 5
+            }
+          }
+        }
+      ],
+      "must_not": []
+    }
+  },
+  "explain": true,
+  "size": 180
 }
