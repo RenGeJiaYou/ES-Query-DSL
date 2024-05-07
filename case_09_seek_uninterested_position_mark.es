@@ -16,13 +16,13 @@ GET /sjj-resume-test-2/_search
 					}
 				},
 				{
-                    // 测试是否存在招聘者屏蔽求职者字段（7条匹配数据）
+                    // 测试是否存在招聘者屏蔽求职者字段（8条匹配数据）
 					"exists": {
 						"field": "resumeRedundancy.queryRedundancyInfo.blockedMeRecruiterUserIdList"
 					}
 				},
                 {
-                    // 测试是否存在屏蔽求职者字段（7条匹配数据）
+                    // 测试是否存在屏蔽求职者字段（8条匹配数据）
 					"exists": {
 						"field": "resumeRedundancy.queryRedundancyInfo.blockedMeUnitIdList"
 					}

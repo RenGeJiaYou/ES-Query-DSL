@@ -6,7 +6,7 @@
  */
 
 
-POST /sjj-resume-test-1/_search
+POST /sjj-resume-test-2/_search
 {
 	"_source": [
 		"isOpened"
@@ -24,13 +24,14 @@ POST /sjj-resume-test-1/_search
 			"should": [],
 			"must_not": []
 		}
-	}
+	},
+	"size": 180
 }
 
 
 /** 上下两者效果相同 */
 
-POST /sjj-resume-test-1/_search
+POST /sjj-resume-test-2/_search
 {
 	"_source": [
 		"isOpened"
@@ -48,5 +49,6 @@ POST /sjj-resume-test-1/_search
 				}
 			]
 		}
-	}
+	},
+	"size": 180
 }
