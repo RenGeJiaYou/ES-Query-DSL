@@ -109,16 +109,13 @@ POST /sjj-resume-test-2/_search
         },
         {
           "bool": {
+			// 将原有bool 表达式
+			// (C1 && C2)||(C1&&C3) 化简为
+			// C1 && (C2 || C3)
+			// C1: 求职者期望底薪 ≥ 当前职位底薪
+			// C2: 求职者期望顶薪 ≤ 当前职位顶薪
+			// C3: 求职者期望顶薪 > 当前职位底薪 
             "must": [
-              {
-				// 原型需求5/8 level2（高优先级）：求职者期望顶薪 ≤ 当前职位顶薪
-                "range": {
-                  "desiredPositions.salary.max": {
-                    "lte": 10000,// 此处应该是当前职位的顶薪
-                    "boost": 6
-                  }
-                }
-              },
               {
 				// 原型需求5/8 level2（高优先级）：求职者期望底薪 ≥ 当前职位底薪
                 "range": {
@@ -127,28 +124,34 @@ POST /sjj-resume-test-2/_search
                     "boost": 6
                   }
                 }
-              }
+              },
+			  {
+				"bool":{
+					"should":[
+						{
+							// 原型需求5/8 level2（中优先级）求职者期望顶薪 ≤ 当前职位底薪
+							"range": {
+								"desiredPositions.salary.max": {
+									"lte": 10000,// 此处应该是当前职位的顶薪
+									"boost": 6
+								}
+							}
+						},
+						{
+							// 原型需求5/8 level2（低优先级）求职者期望顶薪 > 当前职位底薪
+							"range": {
+								"desiredPositions.salary.max": {
+									"gte": 10000,// 此处应该是当前职位的顶薪
+									"boost": 1
+								}
+							}
+						}
+					]
+				}
+			  }
             ]
           }
         },
-        {
-          "range": {
-			// 原型需求5/8 level2（低优先级）：求职者期望顶薪 > 当前职位顶薪
-            "desiredPositions.salary.max": {
-              "gt": 10000,// 此处应该是当前职位的顶薪
-              "boost": 3
-            }
-          }
-        },
-        // {
-        //   "range": {
-		// 	// 原型需求5/8 level2（低优先级）：求职者期望底薪 < 当前职位底薪
-        //     "desiredPositions.salary.min": {
-        //       "lt": 6000, // 此处应该是当前职位的底薪
-        //       "boost": 3
-        //     }
-        //   }
-        // },
         {
 			// 原型需求6/8: 求职者期望工作的行业与当前职位相符；
           "match": {
@@ -161,20 +164,26 @@ POST /sjj-resume-test-2/_search
         {
           "bool": {
             "must_not": [
-              {
-				// 原型需求5/8：level 1：简历中的底薪 不得大于 当前岗位顶薪
-                "range": {
-                  "desiredPositions.salary.min": {
-                    "gt": 10000
-                  }
-                }
-              },
-              {
-				// 原型需求7/8：要求设置为开放的简历才会被推荐
-                "term": {
-                  "isOpened": false
-                }
-              },
+
+            ]
+          }
+        }
+      ],
+	  "must_not": [
+		    //   {
+			// 	// 原型需求7/8：要求设置为开放的简历才会被推荐
+            //     "term": {
+            //       "isOpened": false
+            //     }
+            //   },
+			  {
+                    // 原型需求5/8：level 1：简历中的底薪 不得大于 当前岗位顶薪
+					"range": {
+						"desiredPositions.salary.min": {
+							"gt": 10000
+						}
+					}
+			  },
               {
 				// 原型需求8/8-1: 测试是否匹配求职者屏蔽公司字段
                 "term": {
@@ -193,11 +202,8 @@ POST /sjj-resume-test-2/_search
                   "resumeRedundancy.queryRedundancyInfo.blockedMeUnitIdList": ""
                 }
               }
-            ]
-          }
-        }
-      ]
+			]
     }
   },
-  "explain": true
+  "explain": false
 }
