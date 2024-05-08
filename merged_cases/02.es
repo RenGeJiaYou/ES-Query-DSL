@@ -141,7 +141,7 @@ POST /sjj-resume-test-2/_search
 							// 原型需求5/8 level2（低优先级）求职者期望顶薪 > 当前职位底薪
 							"range": {
 								"desiredPositions.salary.max": {
-									"gte": 10000,// 此处应该是当前职位的顶薪
+									"gt": 10000,// 此处应该是当前职位的顶薪
 									"boost": 1
 								}
 							}
@@ -205,5 +205,5 @@ POST /sjj-resume-test-2/_search
 			]
     }
   },
-  "explain": false
+  "explain": true
 }
