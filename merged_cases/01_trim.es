@@ -72,7 +72,7 @@ POST /sjj-resume-test-2/_search
 					"range": {
 						"seekerUserInfo.initialJobDate": {
 							"gte": "now-1y/d",
-							"lte": "now/d",
+							"lt": "now/d",
 							"boost": 5
 						}
 					}
@@ -82,7 +82,7 @@ POST /sjj-resume-test-2/_search
 					"range": {
 						"seekerUserInfo.initialJobDate": {
 							"gte": "now-3y/d",
-							"lte": "now-1y/d",
+							"lt": "now-1y/d",
 							"boost": 8
 						}
 					}
@@ -92,7 +92,7 @@ POST /sjj-resume-test-2/_search
 					"range": {
 						"seekerUserInfo.initialJobDate": {
 							"gte": "now-5y/d",
-							"lte": "now-3y/d",
+							"lt": "now-3y/d",
 							"boost": 10
 						}
 					}
@@ -205,7 +205,7 @@ POST /sjj-resume-test-2/_search
 				{
                     // 原型需求8/8-2: 测试是否匹配招聘者屏蔽求职者字段
 					"term": {
-						"resumeRedundancy.queryRedundancyInfo.blockedMeRecruiterUserIdList": "2ca4ed2489a9ca510189aa0993490148"
+						"resumeRedundancy.queryRedundancyInfo.blockedMeRecruiterUserIdList": ""
 					}
 				},
 				{
