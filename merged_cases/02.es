@@ -21,7 +21,7 @@ POST /sjj-resume-test-2/_search
                 "match": {
                   "desiredPositions.desiredPositionType.firstLevel": {
                     "query": "jobtype5bc468fe501809dc4d1000000",
-                    "boost": 20
+                    "boost": 10
                   }
                 }
               },
@@ -35,21 +35,21 @@ POST /sjj-resume-test-2/_search
                     "educationBackground09dc4d43e0006",
                     "educationBackground09dc4d43e0008"
                   ],
-                  "boost":18
+                  "boost":8
                 }
               },
               {
 				// 原型需求5/8：level 1：筛选出填写了薪资信息的简历（去除将返回缺失该信息的所有简历）
                 "exists": {
                   "field": "desiredPositions.salary.min",
-				  "boost":16
+				  "boost":6
                 }
               },
               {
 				// 原型需求5/8：level 1：筛选出填写了薪资信息的简历（去除将返回缺失该信息的所有简历）
                 "exists": {
                   "field": "desiredPositions.salary.max",
-				  "boost":16
+				  "boost":6
                 }
               }
             ]
