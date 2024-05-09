@@ -1,5 +1,4 @@
-// 将 01 中的 must 下的所有条件作为一个整体，放到 02 的 should 下，权重放高一点
-// 将 01 中的 must_not 下的所有条件作为一个整体，放到 02 的 should 下
+// 将 02 
 POST /sjj-resume-test-2/_search
 {
   "_source": [
@@ -34,8 +33,7 @@ POST /sjj-resume-test-2/_search
                     "educationBackground09dc4d43e0005",
                     "educationBackground09dc4d43e0006",
                     "educationBackground09dc4d43e0008"
-                  ],
-                  "boost":8
+                  ]
                 }
               },
               {
@@ -153,6 +151,14 @@ POST /sjj-resume-test-2/_search
           }
         },
         {
+          "range": {
+            "desiredPositions.salary.max": {
+              "lt": 4000,
+              "boost": 0.01
+            }
+          }
+        },
+        {
 			// 原型需求6/8: 求职者期望工作的行业与当前职位相符；
           "match": {
             "desiredPositions.companyIndustry.industry": {
@@ -177,14 +183,21 @@ POST /sjj-resume-test-2/_search
             //       "isOpened": false
             //     }
             //   },
-			  {
-                    // 原型需求5/8：level 1：简历中的底薪 不得大于 当前岗位顶薪
-					"range": {
-						"desiredPositions.salary.min": {
-							"gt": 10000
-						}
-					}
-			  },
+			    {
+            "range": {
+              "desiredPositions.salary.max": {
+                "lt": 2030
+              }
+          }
+          },
+          {
+        // 原型需求5/8：level 1：简历中的底薪 不得大于 当前岗位顶薪
+					      "range": {
+						      "desiredPositions.salary.min": {
+							      "gt": 10000
+						      }
+					      }
+			        },
               {
 				// 原型需求8/8-1: 测试是否匹配求职者屏蔽公司字段
                 "term": {
