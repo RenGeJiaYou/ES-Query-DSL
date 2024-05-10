@@ -80,6 +80,13 @@ POST /sjj-resume-test-2/_search
  */
 POST /sjj-resume-test-2/_search
 {
+    "_source": [
+    "desiredPositions.companyIndustry.industry",
+    "desiredPositions.desiredPositionId",
+    "desiredPositions.jobCity.city",
+    "highestEducationHistory.profession",
+    "certificates.certificateName"
+  ],
     "sort": {},
     "query": {
         "bool": {
@@ -142,5 +149,6 @@ POST /sjj-resume-test-2/_search
             ],
             "must_not": []
         }
-    }
+    },
+  "explain": true
 }

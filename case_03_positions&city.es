@@ -46,3 +46,36 @@ POST /sjj-resume-test-2/_search
   },
   "explain": false
 }
+
+// 当 must 和 should 都只有一个查询时：
+// 1. 响应的文档一定匹配 must 中的查询条件
+// 2. should 中的查询条件只是为了排序，不影响响应文档的匹配数量
+POST /sjj-resume-test-2/_search
+{
+  "_source": [
+    "desiredPositions.desiredPositionType.firstLevel",
+    "desiredPositions.jobCity.city"
+  ],
+  "query": {
+    "bool": {
+      "must": [
+        {
+          "term": {
+            "desiredPositions.desiredPositionType.firstLevel.keyword": "jobtype5bc468fe501809dc4d1000000"
+          }
+        }
+      ],
+      "should": [
+        {
+          "match": {
+            "desiredPositions.jobCity.city": {
+              "query": "350100",
+              "boost": 2
+            }
+          }
+        }
+      ]
+    }
+  },
+  "explain": false
+}

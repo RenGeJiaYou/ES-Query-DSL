@@ -39,7 +39,6 @@ POST /sjj-resume-test-1/_search
                         // 本例为检索本科及以上：（本科 硕士 博士）
                         "highestEducationHistory.education":
                             "educationBackground09dc4d43e0005 educationBackground09dc4d43e0006 educationBackground09dc4d43e0008"
-                        
                     }
                 }                
             ],
@@ -168,6 +167,24 @@ POST /sjj-resume-test-2/_search
               "educationBackground09dc4d43e0008"
             ]
           }
+        }
+      ],
+      "should": [],
+      "must_not": []
+    }
+  },
+  "size": 100
+}
+
+
+POST /sjj-resume-test-2/_search
+{
+  "_source": "highestEducationHistory.education",
+  "query": {
+    "bool": {
+      "must": [
+        {
+          
         }
       ],
       "should": [],
