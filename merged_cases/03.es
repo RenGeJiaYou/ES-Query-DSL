@@ -1,4 +1,4 @@
-// 将 02 
+// 修改 02 中的薪资范围，用 boosting query 抑制薪资匹配中的坏结果
 POST /sjj-resume-test-2/_search
 {
   "_source": [
@@ -102,59 +102,6 @@ POST /sjj-resume-test-2/_search
               "gte": "now-5y/d",
               "lt": "now-3y/d",
               "boost": 4
-            }
-          }
-        },
-        {
-          "bool": {
-			// 将原有bool 表达式
-			// (C1 && C2)||(C1&&C3) 化简为
-			// C1 && (C2 || C3)
-			// C1: 求职者期望底薪 ≥ 当前职位底薪
-			// C2: 求职者期望顶薪 ≤ 当前职位顶薪
-			// C3: 求职者期望顶薪 > 当前职位底薪
-            "must": [
-              {
-                // 原型需求5/8 level2（高优先级）：求职者期望底薪 ≥ 当前职位底薪
-                "range": {
-                  "desiredPositions.salary.min": {
-                    "gte": 6000,// 此处应该是当前职位的底薪
-                    "boost": 6
-                  }
-                }
-              },
-              {
-                "bool": {
-                  "should": [
-                    {
-                      // 原型需求5/8 level2（中优先级）求职者期望顶薪 ≤ 当前职位底薪
-                      "range": {
-                        "desiredPositions.salary.max": {
-                          "lte": 10000,// 此处应该是当前职位的顶薪
-                          "boost": 6
-                        }
-                      }
-                    },
-                    {
-                      // 原型需求5/8 level2（低优先级）求职者期望顶薪 > 当前职位底薪
-                      "range": {
-                        "desiredPositions.salary.max": {
-                          "gt": 10000,// 此处应该是当前职位的顶薪
-                          "boost": 1
-                        }
-                      }
-                    }
-                  ]
-                }
-              }
-            ] 
-          }
-        },
-        {
-          "range": {
-            "desiredPositions.salary.max": {
-              "lt": 4000,
-              "boost": 0.01
             }
           }
         },
