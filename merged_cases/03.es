@@ -106,6 +106,76 @@ POST /sjj-resume-test-2/_search
           }
         },
         {
+
+    "boosting": {
+      // 将原有优先匹配和次要匹配嵌入到 positive
+      "positive": {
+      	// 将原有bool 表达式
+        // (C1 && C2)||(C1&&C3) 化简为
+        // C1 && (C2 || C3)
+         // C1: 求职者期望底薪 ≥ 当前职位底薪
+         // C2: 求职者期望顶薪 ≤ 当前职位顶薪
+         // C3: 求职者期望顶薪 > 当前职位底薪
+        "bool": {
+          "must": [
+            {
+	          // 原型需求5/8 level2（高优先级）：求职者期望底薪 ≥ 当前职位底薪
+              "range": {
+                "desiredPositions.salary.min": {
+                  "gte": 6000,
+                  "boost": 6
+                }
+              }
+            },
+            {
+              "bool": {
+                "should": [
+                  {
+                    // 原型需求5/8 level2（中优先级）求职者期望顶薪 ≤ 当前职位底薪
+                    "range": {
+                      "desiredPositions.salary.max": {
+                        "lte": 10000,
+                        "boost": 6
+                      }
+                    }
+                  },
+                  { 
+                    // 原型需求5/8 level2（低优先级）求职者期望顶薪 > 当前职位底薪
+                    "range": {
+                      "desiredPositions.salary.max": {
+                        "gt": 10000,
+                        "boost": 1
+                      }
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      },
+      // 将不符合的匹配项嵌入到 positive
+      "negative": [
+        {
+          "range": {
+            "desiredPositions.salary.max": {
+              "lt": 4000
+            }
+          }
+        },
+        {
+          "range": {
+            "desiredPositions.salary.min": {
+              "gt": 10000
+            }
+          }
+        }
+      ],
+      "negative_boost": 0.8
+    }
+  
+},
+        {
 			// 原型需求6/8: 求职者期望工作的行业与当前职位相符；
           "match": {
             "desiredPositions.companyIndustry.industry": {
@@ -130,21 +200,6 @@ POST /sjj-resume-test-2/_search
             //       "isOpened": false
             //     }
             //   },
-        {
-          "range": {
-            "desiredPositions.salary.max": {
-              "lt": 2030
-            }
-          }
-        },
-        {
-          // 原型需求5/8：level 1：简历中的底薪 不得大于 当前岗位顶薪
-          "range": {
-            "desiredPositions.salary.min": {
-              "gt": 10000
-            }
-          }
-        },
         {
           // 原型需求8/8-1: 测试是否匹配求职者屏蔽公司字段
           "term": {
